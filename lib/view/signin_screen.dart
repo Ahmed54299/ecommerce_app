@@ -1,10 +1,125 @@
+import 'package:ecommerce_app/controllers/auth_controller.dart';
+import 'package:ecommerce_app/utils/app_textstyles.dart';
+import 'package:ecommerce_app/view/main_screen.dart';
+import 'package:ecommerce_app/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SigninScreen extends StatelessWidget {
-  const SigninScreen({super.key});
+  SigninScreen({super.key});
+
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: const Text('Signin Screen'),),);
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 40),
+              Text(
+                'welcome back',
+                style: AppTextstyles.withColor(
+                  AppTextstyles.h1,
+                  Theme.of(context).textTheme.bodyLarge!.color!,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Sign in to continue sopping',
+                style: AppTextstyles.withColor(
+                  AppTextstyles.bodyLarge,
+                  isDark ? Colors.grey[400]! : Colors.grey[600]!,
+                ),
+              ),
+              const SizedBox(height: 40),
+              //emial textfield
+              CustomTextfield(
+                label: 'Email',
+                prefixIcon: Icons.email_outlined,
+                keyboardType: TextInputType.emailAddress,
+                controller: _emailController,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter a valid email';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+              //password textfield
+              CustomTextfield(
+                label: 'Password',
+                prefixIcon: Icons.lock_outline,
+                keyboardType: TextInputType.visiblePassword,
+                isPassword: true,
+                controller: _passwordController,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your  password';
+                  }
+                  return null;
+                },
+              ),
+
+              const SizedBox(height: 8),
+              //forgot password textbutton
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Forgot Password?',
+                    style: AppTextstyles.withColor(
+                      AppTextstyles.buttonMedium,
+                      Theme.of(context).primaryColor,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+              //sign in button
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: _handleSignIn,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Theme.of(context).primaryColor,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: Text(
+                    'Sign In',
+                    style: AppTextstyles.withColor(
+                      AppTextstyles.buttonMedium,
+                      Colors.white,
+                    ),
+                    //
+                    //
+                    //
+                    //sign up textbutton
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  //sign in button onpressed
+  void _handleSignIn() {
+    final AuthController authController = Get.find<AuthController>();
+    authController.login();
+    Get.offAll(() => const MainScreen());
   }
 }

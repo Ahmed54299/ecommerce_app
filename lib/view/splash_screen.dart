@@ -19,7 +19,7 @@ class SplashScreen extends StatelessWidget {
       } else if (authController.isLoggedIn) {
         Get.off(() => const MainScreen());
       } else {
-        Get.off(() => const SigninScreen());
+        Get.off(() => SigninScreen());
       }
     });
 
@@ -154,7 +154,7 @@ class SplashScreen extends StatelessWidget {
 
 class GridPattern extends StatelessWidget {
   final Color color;
-  const GridPattern({Key? key, required this.color}) : super(key: key);
+  const GridPattern({super.key, required this.color});
 
   @override
   Widget build(BuildContext context) {
