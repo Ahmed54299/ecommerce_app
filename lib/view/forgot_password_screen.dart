@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
