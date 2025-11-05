@@ -2,7 +2,6 @@ import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/widgets/size_selector.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:share_plus/share_plus.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
