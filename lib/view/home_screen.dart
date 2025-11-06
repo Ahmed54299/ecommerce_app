@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/view/all_products_screen.dart';
+import 'package:ecommerce_app/view/cart_screen.dart';
 import 'package:ecommerce_app/view/widgets/category_chips.dart';
 import 'package:ecommerce_app/view/widgets/custom_search_bar.dart';
 import 'package:ecommerce_app/view/widgets/product_grid.dart';
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   const Spacer(),
                   //notification icon
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(()=> const CartScreen()),
                     icon: const Icon(Icons.notifications_outlined),
                   ),
                   //cart button
