@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   const Spacer(),
                   //notification icon
                   IconButton(
-                    onPressed: () => Get.to(()=> const CartScreen()),
+                    onPressed: () => Get.to(() => const CartScreen()),
                     icon: const Icon(Icons.notifications_outlined),
                   ),
                   //cart button
@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   GestureDetector(
-                    onTap: () => Get.to(()=> const AllProductsScreen()),
+                    onTap: () => Get.to(() => const AllProductsScreen()),
                     child: Text(
                       'See All',
                       style: TextStyle(color: Theme.of(context).primaryColor),
