@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/controllers/theme_controller.dart';
+import 'package:ecommerce_app/features/notifications/view/notifications_screen.dart';
 import 'package:ecommerce_app/view/all_products_screen.dart';
 import 'package:ecommerce_app/view/cart_screen.dart';
 import 'package:ecommerce_app/view/widgets/category_chips.dart';
@@ -47,12 +48,12 @@ class HomeScreen extends StatelessWidget {
                   const Spacer(),
                   //notification icon
                   IconButton(
-                    onPressed: () => Get.to(() => const CartScreen()),
+                    onPressed: () => Get.to(() => NotificationsScreen()),
                     icon: const Icon(Icons.notifications_outlined),
                   ),
                   //cart button
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const CartScreen()),
                     icon: const Icon(Icons.shopping_bag_outlined),
                   ),
                   //theme button
