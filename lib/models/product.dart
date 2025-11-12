@@ -34,6 +34,7 @@ final List<Product> products = [
     oldPrice: 189.00,
     imageUrl: 'assets/images/laptop.jpg',
     description: 'This is a description of the product 2',
+    isFavorite: true,
   ),
   const Product(
     name: 'Jordan Shoes',
@@ -42,6 +43,7 @@ final List<Product> products = [
     oldPrice: 189.00,
     imageUrl: 'assets/images/shoe2.jpg',
     description: 'This is a description of the product 3',
+    isFavorite: true,
   ),
   const Product(
     name: 'Puma',

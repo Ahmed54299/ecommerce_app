@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
+import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/settings_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
@@ -24,7 +25,7 @@ class AccountScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () => Get.to(()=> const SettingsScreen()),
+            onPressed: () => Get.to(() => const SettingsScreen()),
             icon: Icon(
               Icons.settings_outlined,
               color: isDark ? Colors.white : Colors.black,
@@ -147,7 +148,7 @@ class AccountScreen extends StatelessWidget {
                 if (item['title'] == 'Logout') {
                   _showLogoutDialog(context);
                 } else if (item['title'] == 'My Orders') {
-                  //navigation to my orders screen
+                  Get.to(() => MyOrdersScreen());
                 } else if (item['title'] == 'Shopping Address') {
                   //navigation to shopping address screen
                 } else if (item['title'] == 'Help Center') {
