@@ -34,7 +34,7 @@ class SigninScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'Sign in to continue sopping',
+                'Sign in to continue shopping',
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,

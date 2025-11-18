@@ -1,6 +1,5 @@
 import 'package:ecommerce_app/features/models/notification_type.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class NotificationUtils {
   static IconData getNotificationIcon(NotificationType type) {

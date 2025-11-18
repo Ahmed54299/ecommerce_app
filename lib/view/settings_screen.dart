@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class SettingsScreen extends StatelessWidget {

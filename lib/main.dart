@@ -1,8 +1,10 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_themes.dart';
 import 'package:ecommerce_app/view/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
@@ -20,6 +22,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeController = Get.find<ThemeController>();
     return GetMaterialApp(
+      //local selected
+      //locale: const Locale('ar'),
+      localizationsDelegates: [
+        //localizations
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
       title: 'Fashion Store',
       theme: AppThemes.light,

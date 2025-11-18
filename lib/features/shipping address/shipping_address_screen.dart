@@ -3,7 +3,6 @@ import 'package:ecommerce_app/features/shipping%20address/repositories/address_r
 import 'package:ecommerce_app/features/shipping%20address/widgets/address_card.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class ShippingAddressScreen extends StatelessWidget {
