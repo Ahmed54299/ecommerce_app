@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,21 +16,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
 
-  final List<OnboardingItem> _items = [
+  List<OnboardingItem> get _items => [
     OnboardingItem(
-      description:
-          'Explore the newest fashion trends and find your unique style',
-      title: 'Discover Latest Trends',
+      description: S.of(context).Etnftafyus,
+      title: S.of(context).DLT,
       image: 'assets/images/intro.png',
     ),
     OnboardingItem(
-      description: 'Shop premium quality products from top brands worldwide',
-      title: 'Quality Produts',
+      description: S.of(context).Spqpftbw,
+      title: S.of(context).qp,
       image: 'assets/images/intro1.png',
     ),
     OnboardingItem(
-      description: 'Simple and secure shopping experience at your fingertips',
-      title: 'Easy Shopping',
+      description: S.of(context).Sasseayf,
+      title: S.of(context).ES,
       image: 'assets/images/intro2.png',
     ),
   ];
@@ -121,7 +121,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 TextButton(
                   onPressed: () => _handleGetStarted(),
                   child: Text(
-                    "Skip",
+                    S.of(context).skip,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -150,7 +150,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                   ),
                   child: Text(
-                    _currentPage < _items.length - 1 ? 'Next' : "Get Stated",
+                    _currentPage < _items.length - 1
+                        ? S.of(context).next
+                        : S.of(context).getstarted,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,

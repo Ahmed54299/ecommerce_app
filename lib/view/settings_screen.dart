@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/controllers/theme_controller.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,7 +21,7 @@ class SettingsScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          'Settings',
+          S.of(context).settings,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -31,40 +32,42 @@ class SettingsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildSection(context, 'Appearance', [_buildThemeToggle(context)]),
-            _buildSection(context, 'Notifications', [
+            _buildSection(context, S.of(context).appearance, [
+              _buildThemeToggle(context),
+            ]),
+            _buildSection(context, S.of(context).notifications, [
               _buildSwitchTile(
                 context,
-                'Push Notifications',
-                'Receive push notifications about orders and promotions',
+                S.of(context).PN,
+                S.of(context).Rpnaoap,
                 true,
               ),
               _buildSwitchTile(
                 context,
-                'Email Notifications',
-                'Receive email updates about ypur orders',
+                S.of(context).EN,
+                S.of(context).Reuayo,
                 false,
               ),
             ]),
-            _buildSection(context, 'Privacy', [
+            _buildSection(context, S.of(context).privacy, [
               _buildNavigationTile(
                 context,
-                'Privacy Policy',
-                'View our privacy policy',
+                S.of(context).PrivacyP,
+                S.of(context).Vopp,
                 Icons.privacy_tip_outlined,
               ),
               _buildNavigationTile(
                 context,
-                'Terms of Service',
-                'Read our terms of service',
+                S.of(context).ToS,
+                S.of(context).Rotos,
                 Icons.description_outlined,
               ),
             ]),
-            _buildSection(context, 'About', [
+            _buildSection(context, S.of(context).about, [
               _buildNavigationTile(
                 context,
-                'App Version',
-                '1.0',
+                S.of(context).appversion,
+                S.of(context).v10,
                 Icons.info_outline,
               ),
             ]),
@@ -124,7 +127,7 @@ class SettingsScreen extends StatelessWidget {
             color: Theme.of(context).primaryColor,
           ),
           title: Text(
-            'Dark Mode',
+            S.of(context).darkmode,
             style: AppTextstyles.withColor(
               AppTextstyles.bodyMedium,
               Theme.of(context).textTheme.bodyLarge!.color!,

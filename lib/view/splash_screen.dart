@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/view/main_screen.dart';
 import 'package:ecommerce_app/view/onboarding_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
@@ -99,7 +100,7 @@ class SplashScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "FASHION",
+                          S.of(context).fashion,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 32,
@@ -108,7 +109,7 @@ class SplashScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "STORE",
+                          S.of(context).store,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 32,
@@ -134,7 +135,7 @@ class SplashScreen extends StatelessWidget {
                   return Opacity(opacity: value, child: child);
                 },
                 child: Text(
-                  'Style Meets Simplicity',
+                  S.of(context).SMs,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.9),

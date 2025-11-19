@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
 import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
 import 'package:ecommerce_app/features/shipping%20address/shipping_address_screen.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/settings_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
@@ -18,7 +19,7 @@ class AccountScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'My Account',
+          S.of(context).myaccount,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -64,7 +65,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'Alex Johnson',
+            S.of(context).username,
             style: AppTextstyles.withColor(
               AppTextstyles.h2,
               Theme.of(context).textTheme.bodyLarge!.color!,
@@ -72,7 +73,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'alexjohnson@gmail.com',
+            S.of(context).useremail,
             style: AppTextstyles.withColor(
               AppTextstyles.bodyMedium,
               isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -89,7 +90,7 @@ class AccountScreen extends StatelessWidget {
               ),
             ),
             child: Text(
-              'Edit Profile',
+              S.of(context).EP,
               style: AppTextstyles.withColor(
                 AppTextstyles.buttonMedium,
                 Theme.of(context).textTheme.bodyLarge!.color!,
@@ -104,10 +105,10 @@ class AccountScreen extends StatelessWidget {
   Widget _buildMenuSection(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final menuItems = [
-      {'icon': Icons.shopping_bag_outlined, 'title': 'My Orders'},
-      {'icon': Icons.location_on_outlined, 'title': 'Sopping Address'},
-      {'icon': Icons.help_outline, 'title': 'Help Center'},
-      {'icon': Icons.logout_outlined, 'title': 'Logout'},
+      {'icon': Icons.shopping_bag_outlined, 'title': S.of(context).MO},
+      {'icon': Icons.location_on_outlined, 'title': S.of(context).SA},
+      {'icon': Icons.help_outline, 'title': S.of(context).HC},
+      {'icon': Icons.logout_outlined, 'title': S.of(context).logout},
     ];
 
     return Padding(
@@ -146,13 +147,13 @@ class AccountScreen extends StatelessWidget {
                 color: isDark ? Colors.grey[400] : Colors.grey[600],
               ),
               onTap: () {
-                if (item['title'] == 'Logout') {
+                if (item['title'] == S.of(context).logout) {
                   _showLogoutDialog(context);
-                } else if (item['title'] == 'My Orders') {
+                } else if (item['title'] == S.of(context).MO) {
                   Get.to(() => MyOrdersScreen());
-                } else if (item['title'] == 'Shipping Address') {
+                } else if (item['title'] == S.of(context).SA) {
                   Get.to(() => ShippingAddressScreen());
-                } else if (item['title'] == 'Help Center') {
+                } else if (item['title'] == S.of(context).HC) {
                   //navigation to help center screen
                 }
               },
@@ -191,7 +192,7 @@ class AccountScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Are you sure want to logout?',
+              S.of(context).Ayswtlw,
               style: AppTextstyles.withColor(
                 AppTextstyles.bodyMedium,
                 isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -213,7 +214,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      'Cancel',
+                      S.of(context).cancel,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -240,7 +241,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      'Logout',
+                      S.of(context).logout,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Colors.white,

@@ -10,7 +10,7 @@ class CategoryChips extends StatefulWidget {
 
 class _CategoryChipsState extends State<CategoryChips> {
   int selectedIndex = 0;
-  final categories = ['All', 'Men', 'Women', 'Girls'];
+  final categories = ['All', 'Men', 'Women', 'Girls'];//S.of(context).value
 
   @override
   Widget build(BuildContext context) {

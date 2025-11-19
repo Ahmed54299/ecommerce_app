@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/widgets/category_chips.dart';
 import 'package:ecommerce_app/view/widgets/filter_bottom_sheet.dart';
@@ -14,7 +15,7 @@ class ShoppingScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Shopping',
+          S.of(context).shopping,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,

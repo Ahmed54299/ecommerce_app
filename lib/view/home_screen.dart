@@ -33,11 +33,11 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hello Alex',
+                        'Hello Alex',//S.of(context).hello
                         style: TextStyle(color: Colors.grey, fontSize: 14),
                       ),
                       Text(
-                        'Good Morning',
+                        'Good Morning',// S.of(context).goodmorning
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -87,13 +87,13 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'Popular Product',
+                    'Popular Product',//S.of(context).PP
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   GestureDetector(
                     onTap: () => Get.to(() => const AllProductsScreen()),
                     child: Text(
-                      'See All',
+                      'See All',//S.of(context).seeall
                       style: TextStyle(color: Theme.of(context).primaryColor),
                     ),
                   ),
