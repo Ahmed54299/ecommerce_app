@@ -563,6 +563,376 @@ class S {
   String get v10 {
     return Intl.message('1.0', name: 'v10', desc: '', args: []);
   }
+
+  /// `Edit Profile`
+  String get editprofile {
+    return Intl.message(
+      'Edit Profile',
+      name: 'editprofile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Profile Picture`
+  String get CPP {
+    return Intl.message(
+      'Change Profile Picture',
+      name: 'CPP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Take Photo`
+  String get TP {
+    return Intl.message('Take Photo', name: 'TP', desc: '', args: []);
+  }
+
+  /// `Choose from Gallery`
+  String get CfG {
+    return Intl.message('Choose from Gallery', name: 'CfG', desc: '', args: []);
+  }
+
+  /// `Save Changes`
+  String get SC {
+    return Intl.message('Save Changes', name: 'SC', desc: '', args: []);
+  }
+
+  /// `Reset Password`
+  String get RP {
+    return Intl.message('Reset Password', name: 'RP', desc: '', args: []);
+  }
+
+  /// `Enter your email to reset your password`
+  String get Eyetryp {
+    return Intl.message(
+      'Enter your email to reset your password',
+      name: 'Eyetryp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send Reset Link`
+  String get SRL {
+    return Intl.message('Send Reset Link', name: 'SRL', desc: '', args: []);
+  }
+
+  /// `Check Your Email`
+  String get CYE {
+    return Intl.message('Check Your Email', name: 'CYE', desc: '', args: []);
+  }
+
+  /// `We have sent password recovery instructions to your email`
+  String get Whspritye {
+    return Intl.message(
+      'We have sent password recovery instructions to your email',
+      name: 'Whspritye',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ok`
+  String get ok {
+    return Intl.message('Ok', name: 'ok', desc: '', args: []);
+  }
+
+  /// `Already have an account? `
+  String get Ahaaw {
+    return Intl.message(
+      'Already have an account? ',
+      name: 'Ahaaw',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Account`
+  String get CA {
+    return Intl.message('Create Account', name: 'CA', desc: '', args: []);
+  }
+
+  /// `Signup to get started`
+  String get Stgs {
+    return Intl.message(
+      'Signup to get started',
+      name: 'Stgs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Name`
+  String get fullname {
+    return Intl.message('Full Name', name: 'fullname', desc: '', args: []);
+  }
+
+  /// `Please enter your name`
+  String get Peyn {
+    return Intl.message(
+      'Please enter your name',
+      name: 'Peyn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Password`
+  String get CP {
+    return Intl.message('Confirm Password', name: 'CP', desc: '', args: []);
+  }
+
+  /// `Please confirm your password`
+  String get Pcyp {
+    return Intl.message(
+      'Please confirm your password',
+      name: 'Pcyp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password do not match`
+  String get Pdnm {
+    return Intl.message(
+      'Password do not match',
+      name: 'Pdnm',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search for help`
+  String get Sfh {
+    return Intl.message('Search for help', name: 'Sfh', desc: '', args: []);
+  }
+
+  /// `Popular Questions`
+  String get PQ {
+    return Intl.message('Popular Questions', name: 'PQ', desc: '', args: []);
+  }
+
+  /// `How to track my orders?`
+  String get Httmo {
+    return Intl.message(
+      'How to track my orders?',
+      name: 'Httmo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To track your order:\n\n`
+  String get Ttyo {
+    return Intl.message(
+      'To track your order:\n\n',
+      name: 'Ttyo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Go to "My Orders" in your account\n`
+  String get GtMOiya {
+    return Intl.message(
+      '1. Go to "My Orders" in your account\n',
+      name: 'GtMOiya',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Select the order you want to track\n`
+  String get Stoywtt {
+    return Intl.message(
+      '2. Select the order you want to track\n',
+      name: 'Stoywtt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Click on "Track Order"\n`
+  String get CoTO {
+    return Intl.message(
+      '3. Click on "Track Order"\n',
+      name: 'CoTO',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. You'll see real time updates about your package location\n\n`
+  String get Ysrtuaypl {
+    return Intl.message(
+      '4. You\'ll see real time updates about your package location\n\n',
+      name: 'Ysrtuaypl',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You can also click on the tracking number in your order confirmation email to track your package directly.`
+  String get Ycacottniyocettybd {
+    return Intl.message(
+      'You can also click on the tracking number in your order confirmation email to track your package directly.',
+      name: 'Ycacottniyocettybd',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How to return an item?`
+  String get Htraiw {
+    return Intl.message(
+      'How to return an item?',
+      name: 'Htraiw',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To return an item:\n\n`
+  String get Trai {
+    return Intl.message(
+      'To return an item:\n\n',
+      name: 'Trai',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Select the order with the item you want to return it\n`
+  String get Stowtiywtri {
+    return Intl.message(
+      '2. Select the order with the item you want to return it\n',
+      name: 'Stowtiywtri',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Click on "Return Item"\n`
+  String get CoRI {
+    return Intl.message(
+      '3. Click on "Return Item"\n',
+      name: 'CoRI',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. Select the reason for return\n`
+  String get Strfr {
+    return Intl.message(
+      '4. Select the reason for return\n',
+      name: 'Strfr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `5. Print the return label\n`
+  String get Ptrl {
+    return Intl.message(
+      '5. Print the return label\n',
+      name: 'Ptrl',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `6. Pack the item securely\n`
+  String get Ptis {
+    return Intl.message(
+      '6. Pack the item securely\n',
+      name: 'Ptis',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `7. Drop off the package at the nearest shipping location\n\n`
+  String get Dotpatnsl {
+    return Intl.message(
+      '7. Drop off the package at the nearest shipping location\n\n',
+      name: 'Dotpatnsl',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Returns must be initiated within 30 days of delivery. Once we receive the item, your refund will be processed within 5-7 business days.`
+  String get Rmbiw30dodOwrtiyrwbpw57bd {
+    return Intl.message(
+      'Returns must be initiated within 30 days of delivery. Once we receive the item, your refund will be processed within 5-7 business days.',
+      name: 'Rmbiw30dodOwrtiyrwbpw57bd',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Information not available. Please contact support for assistance`
+  String get InaPcsfa {
+    return Intl.message(
+      'Information not available. Please contact support for assistance',
+      name: 'InaPcsfa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Got It`
+  String get gotit {
+    return Intl.message('Got It', name: 'gotit', desc: '', args: []);
+  }
+
+  /// `Orders`
+  String get orders {
+    return Intl.message('Orders', name: 'orders', desc: '', args: []);
+  }
+
+  /// `Payments`
+  String get payments {
+    return Intl.message('Payments', name: 'payments', desc: '', args: []);
+  }
+
+  /// `Shipping`
+  String get shipping {
+    return Intl.message('Shipping', name: 'shipping', desc: '', args: []);
+  }
+
+  /// `Returns`
+  String get returns {
+    return Intl.message('Returns', name: 'returns', desc: '', args: []);
+  }
+
+  /// `Help Categories`
+  String get HCs {
+    return Intl.message('Help Categories', name: 'HCs', desc: '', args: []);
+  }
+
+  /// `Still need help?`
+  String get Snhw {
+    return Intl.message('Still need help?', name: 'Snhw', desc: '', args: []);
+  }
+
+  /// `Contact our support team`
+  String get Cost {
+    return Intl.message(
+      'Contact our support team',
+      name: 'Cost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contact Support`
+  String get CS {
+    return Intl.message('Contact Support', name: 'CS', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

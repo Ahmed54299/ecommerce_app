@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/main_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
@@ -34,7 +35,7 @@ class SignUpScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Text(
-                'Create Account',
+                '${S.of(context).CA}',
                 style: AppTextstyles.withColor(
                   AppTextstyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -42,7 +43,7 @@ class SignUpScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'Signup to get started',
+                '${S.of(context).Stgs}',
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -51,13 +52,13 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 40),
               //full name textfield
               CustomTextfield(
-                label: 'Full Name',
+                label: '${S.of(context).fullname}',
                 prefixIcon: Icons.person_outline,
                 keyboardType: TextInputType.name,
                 controller: _nameController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter your name';
+                    return '${S.of(context).Peyn}';
                   }
                   return null;
                 },
@@ -65,16 +66,16 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //email textfield
               CustomTextfield(
-                label: 'Email',
+                label: '${S.of(context).email}',
                 prefixIcon: Icons.email_outlined,
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter your email';
+                    return '${S.of(context).Peye}';
                   }
                   if (!GetUtils.isEmail(value)) {
-                    return 'Please enter a valid email';
+                    return '${S.of(context).Peave}';
                   }
                   return null;
                 },
@@ -82,14 +83,14 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //password textfield
               CustomTextfield(
-                label: 'Password',
+                label: '${S.of(context).password}',
                 prefixIcon: Icons.lock_outline,
                 keyboardType: TextInputType.visiblePassword,
                 isPassword: true,
                 controller: _passwordController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter your password';
+                    return '${S.of(context).Peyp}';
                   }
                   return null;
                 },
@@ -97,17 +98,17 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //confirm password textfield
               CustomTextfield(
-                label: 'Confirm Password',
+                label: '${S.of(context).CP}',
                 prefixIcon: Icons.lock_outline,
                 keyboardType: TextInputType.visiblePassword,
                 isPassword: true,
                 controller: _confirmPasswordController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please confirm your password';
+                    return '${S.of(context).Pcyp}';
                   }
                   if (value != _passwordController.text) {
-                    return 'Password do not match';
+                    return '${S.of(context).Pdnm}';
                   }
                   return null;
                 },
@@ -126,7 +127,7 @@ class SignUpScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    'Sign Up',
+                    '${S.of(context).signup}',
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,
@@ -140,7 +141,7 @@ class SignUpScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Already have an account? ',
+                    '${S.of(context).Ahaaw}',
                     style: AppTextstyles.withColor(
                       AppTextstyles.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -149,7 +150,7 @@ class SignUpScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () => Get.off(() => SigninScreen()),
                     child: Text(
-                      'Sign In',
+                      '${S.of(context).signin}',
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).primaryColor,
