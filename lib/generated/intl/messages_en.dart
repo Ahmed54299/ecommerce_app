@@ -64,9 +64,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "HCs": MessageLookupByLibrary.simpleMessage("Help Categories"),
     "Htraiw": MessageLookupByLibrary.simpleMessage("How to return an item?"),
     "Httmo": MessageLookupByLibrary.simpleMessage("How to track my orders?"),
+    "IWC": MessageLookupByLibrary.simpleMessage("Information We Collect"),
     "InaPcsfa": MessageLookupByLibrary.simpleMessage(
       "Information not available. Please contact support for assistance",
     ),
+    "LuM2024": MessageLookupByLibrary.simpleMessage("Last updated: March 2024"),
     "MO": MessageLookupByLibrary.simpleMessage("My Orders"),
     "PN": MessageLookupByLibrary.simpleMessage("Push Notifications"),
     "PP": MessageLookupByLibrary.simpleMessage("Popular Product"),
@@ -125,6 +127,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "Ttyo": MessageLookupByLibrary.simpleMessage("To track your order:\n\n"),
     "Vopp": MessageLookupByLibrary.simpleMessage("View our privacy policy"),
     "WS": MessageLookupByLibrary.simpleMessage("Wishlist Screen"),
+    "Wcitypdtuinea": MessageLookupByLibrary.simpleMessage(
+      "We collect information that you provide directly to us, including name, email address, and shippinginformation.",
+    ),
     "Whspritye": MessageLookupByLibrary.simpleMessage(
       "We have sent password recovery instructions to your email",
     ),

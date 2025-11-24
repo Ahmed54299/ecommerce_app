@@ -933,6 +933,36 @@ class S {
   String get CS {
     return Intl.message('Contact Support', name: 'CS', desc: '', args: []);
   }
+
+  /// `Information We Collect`
+  String get IWC {
+    return Intl.message(
+      'Information We Collect',
+      name: 'IWC',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We collect information that you provide directly to us, including name, email address, and shippinginformation.`
+  String get Wcitypdtuinea {
+    return Intl.message(
+      'We collect information that you provide directly to us, including name, email address, and shippinginformation.',
+      name: 'Wcitypdtuinea',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last updated: March 2024`
+  String get LuM2024 {
+    return Intl.message(
+      'Last updated: March 2024',
+      name: 'LuM2024',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

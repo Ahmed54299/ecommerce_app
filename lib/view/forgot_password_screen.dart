@@ -50,16 +50,16 @@ class ForgotPasswordScreen extends StatelessWidget {
               const SizedBox(height: 40),
               //email textfield
               CustomTextfield(
-                label: '${S.of(context).email}',
+                label: S.of(context).email,
                 prefixIcon: Icons.email_outlined,
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return '${S.of(context).Peye}';
+                    return S.of(context).Peye;
                   }
                   if (!GetUtils.isEmail(value)) {
-                    return '${S.of(context).Peave}';
+                    return S.of(context).Peave;
                   }
                   return null;
                 },
@@ -80,7 +80,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    '${S.of(context).SRL}',
+                    S.of(context).SRL,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,
@@ -99,16 +99,16 @@ class ForgotPasswordScreen extends StatelessWidget {
   void showSuccessDialog(BuildContext context) {
     Get.dialog(
       AlertDialog(
-        title: Text('${S.of(context).CYE}', style: AppTextstyles.h3),
+        title: Text(S.of(context).CYE, style: AppTextstyles.h3),
         content: Text(
-          '${S.of(context).Whspritye}',
+          S.of(context).Whspritye,
           style: AppTextstyles.bodyMedium,
         ),
         actions: [
           TextButton(
             onPressed: () => Get.back(),
             child: Text(
-              '${S.of(context).ok}',
+              S.of(context).ok,
               style: AppTextstyles.withColor(
                 AppTextstyles.buttonMedium,
                 Theme.of(context).primaryColor,

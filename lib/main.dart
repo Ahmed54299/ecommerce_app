@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     final themeController = Get.find<ThemeController>();
     return GetMaterialApp(
       //local selected
-      //locale: const Locale('ar'),
+      locale: const Locale('ar'),
       localizationsDelegates: [
         //localizations
         S.delegate,

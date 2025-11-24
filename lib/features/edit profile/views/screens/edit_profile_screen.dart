@@ -3,7 +3,6 @@ import 'package:ecommerce_app/features/edit%20profile/views/widgets/profile_imag
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class EditProfileScreen extends StatelessWidget {

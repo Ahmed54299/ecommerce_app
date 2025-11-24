@@ -4,7 +4,6 @@ import 'package:ecommerce_app/features/help%20center/views/widgets/popular_quest
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class HelpCenterScreen extends StatelessWidget {
@@ -66,7 +65,7 @@ class HelpCenterScreen extends StatelessWidget {
       ),
       child: TextField(
         decoration: InputDecoration(
-          hintText: '${S.of(context).Sfh}',
+          hintText: S.of(context).Sfh,
           hintStyle: AppTextstyles.withColor(
             AppTextstyles.bodyMedium,
             isDark ? Colors.grey[400]! : Colors.grey[600]!,

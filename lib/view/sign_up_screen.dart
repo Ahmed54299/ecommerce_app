@@ -35,7 +35,7 @@ class SignUpScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Text(
-                '${S.of(context).CA}',
+                S.of(context).CA,
                 style: AppTextstyles.withColor(
                   AppTextstyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -43,7 +43,7 @@ class SignUpScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                '${S.of(context).Stgs}',
+                S.of(context).Stgs,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -52,13 +52,13 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 40),
               //full name textfield
               CustomTextfield(
-                label: '${S.of(context).fullname}',
+                label: S.of(context).fullname,
                 prefixIcon: Icons.person_outline,
                 keyboardType: TextInputType.name,
                 controller: _nameController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return '${S.of(context).Peyn}';
+                    return S.of(context).Peyn;
                   }
                   return null;
                 },
@@ -66,16 +66,16 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //email textfield
               CustomTextfield(
-                label: '${S.of(context).email}',
+                label: S.of(context).email,
                 prefixIcon: Icons.email_outlined,
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return '${S.of(context).Peye}';
+                    return S.of(context).Peye;
                   }
                   if (!GetUtils.isEmail(value)) {
-                    return '${S.of(context).Peave}';
+                    return S.of(context).Peave;
                   }
                   return null;
                 },
@@ -83,14 +83,14 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //password textfield
               CustomTextfield(
-                label: '${S.of(context).password}',
+                label: S.of(context).password,
                 prefixIcon: Icons.lock_outline,
                 keyboardType: TextInputType.visiblePassword,
                 isPassword: true,
                 controller: _passwordController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return '${S.of(context).Peyp}';
+                    return S.of(context).Peyp;
                   }
                   return null;
                 },
@@ -98,17 +98,17 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //confirm password textfield
               CustomTextfield(
-                label: '${S.of(context).CP}',
+                label: S.of(context).CP,
                 prefixIcon: Icons.lock_outline,
                 keyboardType: TextInputType.visiblePassword,
                 isPassword: true,
                 controller: _confirmPasswordController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return '${S.of(context).Pcyp}';
+                    return S.of(context).Pcyp;
                   }
                   if (value != _passwordController.text) {
-                    return '${S.of(context).Pdnm}';
+                    return S.of(context).Pdnm;
                   }
                   return null;
                 },
@@ -127,7 +127,7 @@ class SignUpScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    '${S.of(context).signup}',
+                    S.of(context).signup,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,
@@ -141,7 +141,7 @@ class SignUpScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    '${S.of(context).Ahaaw}',
+                    S.of(context).Ahaaw,
                     style: AppTextstyles.withColor(
                       AppTextstyles.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -150,7 +150,7 @@ class SignUpScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () => Get.off(() => SigninScreen()),
                     child: Text(
-                      '${S.of(context).signin}',
+                      S.of(context).signin,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).primaryColor,

@@ -2,7 +2,6 @@ import 'package:ecommerce_app/features/help%20center/views/widgets/category_card
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HelpCategoriesSection extends StatelessWidget {
   const HelpCategoriesSection({super.key});
@@ -10,15 +9,15 @@ class HelpCategoriesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final categories = [
-      {'icon': Icons.shopping_bag_outlined, 'title': '${S.of(context).orders}'},
-      {'icon': Icons.payment_outlined, 'title': '${S.of(context).payments}'},
+      {'icon': Icons.shopping_bag_outlined, 'title': S.of(context).orders},
+      {'icon': Icons.payment_outlined, 'title': S.of(context).payments},
       {
         'icon': Icons.local_shipping_outlined,
-        'title': '${S.of(context).shipping}',
+        'title': S.of(context).shipping,
       },
       {
         'icon': Icons.assignment_return_outlined,
-        'title': '${S.of(context).returns}',
+        'title': S.of(context).returns,
       },
     ];
     return Padding(
