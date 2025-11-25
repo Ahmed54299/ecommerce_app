@@ -1068,6 +1068,31 @@ class S {
       args: [],
     );
   }
+
+  /// `Order Confirmed!`
+  String get OC {
+    return Intl.message('Order Confirmed!', name: 'OC', desc: '', args: []);
+  }
+
+  /// `Your order #$orderNumber has successfully placed.`
+  String get Yoh {
+    return Intl.message(
+      'Your order #\$orderNumber has successfully placed.',
+      name: 'Yoh',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Track Order`
+  String get TO {
+    return Intl.message('Track Order', name: 'TO', desc: '', args: []);
+  }
+
+  /// `Continue Shopping`
+  String get CSing {
+    return Intl.message('Continue Shopping', name: 'CSing', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

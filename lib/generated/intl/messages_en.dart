@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "CP": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "CPP": MessageLookupByLibrary.simpleMessage("Change Profile Picture"),
     "CS": MessageLookupByLibrary.simpleMessage("Contact Support"),
+    "CSing": MessageLookupByLibrary.simpleMessage("Continue Shopping"),
     "CYE": MessageLookupByLibrary.simpleMessage("Check Your Email"),
     "CfG": MessageLookupByLibrary.simpleMessage("Choose from Gallery"),
     "CoRI": MessageLookupByLibrary.simpleMessage(
@@ -72,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "MO": MessageLookupByLibrary.simpleMessage("My Orders"),
     "MSA4B": MessageLookupByLibrary.simpleMessage("123 Main Street, Apt 4B"),
     "NYNY101": MessageLookupByLibrary.simpleMessage("New York, NY 10001"),
+    "OC": MessageLookupByLibrary.simpleMessage("Order Confirmed!"),
     "OCS": MessageLookupByLibrary.simpleMessage("Order Confirmation Screen"),
     "OS": MessageLookupByLibrary.simpleMessage("Order Summary"),
     "PM": MessageLookupByLibrary.simpleMessage("Payment Method"),
@@ -127,6 +129,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "Strfr": MessageLookupByLibrary.simpleMessage(
       "4. Select the reason for return\n",
     ),
+    "TO": MessageLookupByLibrary.simpleMessage("Track Order"),
     "TP": MessageLookupByLibrary.simpleMessage("Take Photo"),
     "ToS": MessageLookupByLibrary.simpleMessage("Terms of Service"),
     "Trai": MessageLookupByLibrary.simpleMessage("To return an item:\n\n"),
@@ -142,6 +145,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "Ycacottniyocettybd": MessageLookupByLibrary.simpleMessage(
       "You can also click on the tracking number in your order confirmation email to track your package directly.",
+    ),
+    "Yoh": MessageLookupByLibrary.simpleMessage(
+      "Your order #\$orderNumber has successfully placed.",
     ),
     "Ysrtuaypl": MessageLookupByLibrary.simpleMessage(
       "4. You\'ll see real time updates about your package location\n\n",

@@ -24,7 +24,7 @@ class CheckoutScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          '${S.of(context).checkout}',
+          S.of(context).checkout,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -56,7 +56,12 @@ class CheckoutScreen extends StatelessWidget {
           //generate a random order number(in real app, this would come from backend)
           final orderNumber =
               'ORD${DateTime.now().millisecondsSinceEpoch.toString().substring(7)}';
-          Get.to(() => const OrderConfirmationScreen());
+          Get.to(
+            () => OrderConfirmationScreen(
+              orderNumber: orderNumber,
+              totalAmount: S.of(context).s662 as double,
+            ),
+          );
         },
       ),
     );

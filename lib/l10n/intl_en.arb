@@ -146,5 +146,9 @@
      "total" : "Total",
      "PO" : "Place Order",
      "s662" : "662.10",
-     "OCS" : "Order Confirmation Screen"
+     "OCS" : "Order Confirmation Screen",
+     "OC" : "Order Confirmed!",
+     "Yoh" : "Your order #$orderNumber has successfully placed.",
+     "TO" : "Track Order",
+     "CSing" : "Continue Shopping"
 }
