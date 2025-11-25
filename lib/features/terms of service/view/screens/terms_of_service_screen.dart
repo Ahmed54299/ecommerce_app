@@ -36,33 +36,33 @@ class TermsOfServiceScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              InfoSection(
+              const InfoSection(
                 title: 'Welcome to Fashion Store',
                 content:
                     'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Account Registration',
                 content:
                     'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
 
-              InfoSection(
+              const InfoSection(
                 title: 'User REsponsibilities',
                 content:
                     'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Privacy Policy',
                 content:
                     'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Intellectual Property',
                 content:
                     'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Termination',
                 content:
                     'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',

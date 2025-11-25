@@ -35,32 +35,32 @@ class PrivacyPolicyScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              InfoSection(
+              const InfoSection(
                 title: 'Information We Collect',
                 content:
                     'We collect information that you provide directly to us, including name, email address, and shippinginformation.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'How We Use Your Information',
                 content:
                     'We use the information we collect to provide, maintain and improve our services, process your transactions, and send you updates.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Information Sharing',
                 content:
                     'We collect information that you provide directly to us, including name, email address, and shippinginformation.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Data Security',
                 content:
                     'We collect information that you provide directly to us, including name, email address, and shippinginformation.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Your Rights',
                 content:
                     'We collect information that you provide directly to us, including name, email address, and shippinginformation.',
               ),
-              InfoSection(
+              const InfoSection(
                 title: 'Cookie Policy',
                 content:
                     'We collect information that you provide directly to us, including name, email address, and shippinginformation.',

@@ -963,6 +963,111 @@ class S {
       args: [],
     );
   }
+
+  /// `123 Main Street, Apt 4B`
+  String get MSA4B {
+    return Intl.message(
+      '123 Main Street, Apt 4B',
+      name: 'MSA4B',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New York, NY 10001`
+  String get NYNY101 {
+    return Intl.message(
+      'New York, NY 10001',
+      name: 'NYNY101',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Method`
+  String get PM {
+    return Intl.message('Payment Method', name: 'PM', desc: '', args: []);
+  }
+
+  /// `Checkout`
+  String get checkout {
+    return Intl.message('Checkout', name: 'checkout', desc: '', args: []);
+  }
+
+  /// `Visa ending in 4242`
+  String get Vei4242 {
+    return Intl.message(
+      'Visa ending in 4242',
+      name: 'Vei4242',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expires 12/24`
+  String get expires1224 {
+    return Intl.message(
+      'Expires 12/24',
+      name: 'expires1224',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Summary`
+  String get OS {
+    return Intl.message('Order Summary', name: 'OS', desc: '', args: []);
+  }
+
+  /// `Subtotal`
+  String get subtotal {
+    return Intl.message('Subtotal', name: 'subtotal', desc: '', args: []);
+  }
+
+  /// `599.93`
+  String get s599 {
+    return Intl.message('599.93', name: 's599', desc: '', args: []);
+  }
+
+  /// `10.00`
+  String get s10 {
+    return Intl.message('10.00', name: 's10', desc: '', args: []);
+  }
+
+  /// `Tax`
+  String get tax {
+    return Intl.message('Tax', name: 'tax', desc: '', args: []);
+  }
+
+  /// `53.00`
+  String get s53 {
+    return Intl.message('53.00', name: 's53', desc: '', args: []);
+  }
+
+  /// `Total`
+  String get total {
+    return Intl.message('Total', name: 'total', desc: '', args: []);
+  }
+
+  /// `Place Order`
+  String get PO {
+    return Intl.message('Place Order', name: 'PO', desc: '', args: []);
+  }
+
+  /// `662.10`
+  String get s662 {
+    return Intl.message('662.10', name: 's662', desc: '', args: []);
+  }
+
+  /// `Order Confirmation Screen`
+  String get OCS {
+    return Intl.message(
+      'Order Confirmation Screen',
+      name: 'OCS',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

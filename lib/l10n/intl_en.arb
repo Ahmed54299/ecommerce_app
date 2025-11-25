@@ -130,5 +130,21 @@
      "CS" : "Contact Support",
      "IWC" : "Information We Collect",
      "Wcitypdtuinea" : "We collect information that you provide directly to us, including name, email address, and shippinginformation.",
-     "LuM2024" : "Last updated: March 2024"
+     "LuM2024" : "Last updated: March 2024",
+     "MSA4B" : "123 Main Street, Apt 4B",
+     "NYNY101" : "New York, NY 10001",
+     "PM" : "Payment Method",
+     "checkout" : "Checkout",
+     "Vei4242" : "Visa ending in 4242",
+     "expires1224" : "Expires 12/24",
+     "OS" : "Order Summary",
+     "subtotal" : "Subtotal",
+     "s599" : "599.93",
+     "s10" : "10.00",
+     "tax" : "Tax",
+     "s53" : "53.00",
+     "total" : "Total",
+     "PO" : "Place Order",
+     "s662" : "662.10",
+     "OCS" : "Order Confirmation Screen"
 }
