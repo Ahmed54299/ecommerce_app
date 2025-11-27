@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/utils/app_textstyles.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class CategoryChips extends StatefulWidget {

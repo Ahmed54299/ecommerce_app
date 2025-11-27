@@ -1,15 +1,13 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/notifications/view/notifications_screen.dart';
 import 'package:ecommerce_app/view/all_products_screen.dart';
-import 'package:ecommerce_app/view/cart_screen.dart';
+import 'package:ecommerce_app/view/main%20widgets/cart_screen.dart';
 import 'package:ecommerce_app/view/widgets/category_chips.dart';
 import 'package:ecommerce_app/view/widgets/custom_search_bar.dart';
 import 'package:ecommerce_app/view/widgets/product_grid.dart';
 import 'package:ecommerce_app/view/widgets/sale_banner.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:restart_app/restart_app.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -51,9 +49,12 @@ class HomeScreen extends StatelessWidget {
                   //translate icon
                   IconButton(
                     onPressed: () {
-                      context.setLocale(Locale('ar'));
-
-                      Restart.restartApp();
+                      // if (Locale('en') == true) {
+                      //   context.setLocale(Locale('ar'));
+                      // } else {
+                      //   context.setLocale(Locale('en'));
+                      // }
+                      // Restart.restartApp();
                     }, // => Locale('en'),
                     icon: const Icon(Icons.language_outlined),
                   ),

@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/features/my%20orders/model/order.dart';
 import 'package:ecommerce_app/features/my%20orders/repository/order_repository.dart';
 import 'package:ecommerce_app/features/my%20orders/view/widgets/order_card.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,7 +25,7 @@ class MyOrdersScreen extends StatelessWidget {
             ),
           ),
           title: Text(
-            'My Orders',
+            S.of(context).MO,
             style: AppTextstyles.withColor(
               AppTextstyles.h3,
               isDark ? Colors.white : Colors.black,

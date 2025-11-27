@@ -1098,6 +1098,196 @@ class S {
   String get Language {
     return Intl.message('Language', name: 'Language', desc: '', args: []);
   }
+
+  /// `Change Language`
+  String get changel {
+    return Intl.message('Change Language', name: 'changel', desc: '', args: []);
+  }
+
+  /// `Details`
+  String get details {
+    return Intl.message('Details', name: 'details', desc: '', args: []);
+  }
+
+  /// `Edit Address`
+  String get editaddress {
+    return Intl.message(
+      'Edit Address',
+      name: 'editaddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Update Address`
+  String get updateaddress {
+    return Intl.message(
+      'Update Address',
+      name: 'updateaddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to delete this address?`
+  String get Aysywtdta {
+    return Intl.message(
+      'Are you sure you want to delete this address?',
+      name: 'Aysywtdta',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete Address`
+  String get deleteaddress {
+    return Intl.message(
+      'Delete Address',
+      name: 'deleteaddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message('Delete', name: 'delete', desc: '', args: []);
+  }
+
+  /// `Add New Address`
+  String get ANA {
+    return Intl.message('Add New Address', name: 'ANA', desc: '', args: []);
+  }
+
+  /// `Save Address`
+  String get saveaddress {
+    return Intl.message(
+      'Save Address',
+      name: 'saveaddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Label (e.g. Home, Office)`
+  String get label {
+    return Intl.message(
+      'Label (e.g. Home, Office)',
+      name: 'label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Address`
+  String get fulladdress {
+    return Intl.message(
+      'Full Address',
+      name: 'fulladdress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `City`
+  String get city {
+    return Intl.message('City', name: 'city', desc: '', args: []);
+  }
+
+  /// `State`
+  String get state {
+    return Intl.message('State', name: 'state', desc: '', args: []);
+  }
+
+  /// `ZIP Code`
+  String get zip {
+    return Intl.message('ZIP Code', name: 'zip', desc: '', args: []);
+  }
+
+  /// `Mark all as read`
+  String get allmark {
+    return Intl.message(
+      'Mark all as read',
+      name: 'allmark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select Size`
+  String get selectsize {
+    return Intl.message('Select Size', name: 'selectsize', desc: '', args: []);
+  }
+
+  /// `Description`
+  String get description {
+    return Intl.message('Description', name: 'description', desc: '', args: []);
+  }
+
+  /// `Add To Cart`
+  String get ATC {
+    return Intl.message('Add To Cart', name: 'ATC', desc: '', args: []);
+  }
+
+  /// `Buy Now`
+  String get buynow {
+    return Intl.message('Buy Now', name: 'buynow', desc: '', args: []);
+  }
+
+  /// `Thank you for sharing!`
+  String get Tyfs {
+    return Intl.message(
+      'Thank you for sharing!',
+      name: 'Tyfs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Error Sharing:`
+  String get error {
+    return Intl.message('Error Sharing:', name: 'error', desc: '', args: []);
+  }
+
+  /// `My Cart`
+  String get MC {
+    return Intl.message('My Cart', name: 'MC', desc: '', args: []);
+  }
+
+  /// `Remove Item`
+  String get removeI {
+    return Intl.message('Remove Item', name: 'removeI', desc: '', args: []);
+  }
+
+  /// `Are you sure want to remove this item from your cart?`
+  String get Ayswtrtifyc {
+    return Intl.message(
+      'Are you sure want to remove this item from your cart?',
+      name: 'Ayswtrtifyc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Remove`
+  String get remove {
+    return Intl.message('Remove', name: 'remove', desc: '', args: []);
+  }
+
+  /// `Total (4 items)`
+  String get totalI {
+    return Intl.message('Total (4 items)', name: 'totalI', desc: '', args: []);
+  }
+
+  /// `Proceed to Checkout`
+  String get proceed {
+    return Intl.message(
+      'Proceed to Checkout',
+      name: 'proceed',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

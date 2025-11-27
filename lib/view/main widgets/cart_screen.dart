@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/features/checkout/screens/checkout_screen.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class CartScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          'My Cart',
+          S.of(context).MC,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -186,7 +187,7 @@ class CartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             Text(
-              'Remove Item',
+              S.of(context).removeI,
               style: AppTextstyles.withColor(
                 AppTextstyles.h3,
                 Theme.of(context).textTheme.bodyLarge!.color!,
@@ -194,7 +195,7 @@ class CartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Are you sure want to remove this item from your cart?',
+              S.of(context).Ayswtrtifyc,
               textAlign: TextAlign.center,
               style: AppTextstyles.withColor(
                 AppTextstyles.bodyMedium,
@@ -217,7 +218,7 @@ class CartScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      'Cancel',
+                      S.of(context).cancel,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodyMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -240,7 +241,7 @@ class CartScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      'Remove',
+                      S.of(context).remove,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodyMedium,
                         Colors.white,
@@ -278,7 +279,7 @@ class CartScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Total (4 items)',
+                S.of(context).totalI,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyMedium,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -306,7 +307,7 @@ class CartScreen extends StatelessWidget {
                 ),
               ),
               child: Text(
-                'Proceed to Checkout',
+                S.of(context).proceed,
                 style: AppTextstyles.withColor(
                   AppTextstyles.buttonMedium,
                   Colors.white,

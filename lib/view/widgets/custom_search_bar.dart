@@ -1,6 +1,6 @@
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
-import 'package:easy_localization/easy_localization.dart';
 
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({super.key});
@@ -17,7 +17,7 @@ class CustomSearchBar extends StatelessWidget {
           Theme.of(context).textTheme.bodyLarge?.color ?? Colors.black,
         ),
         decoration: InputDecoration(
-          hintText: StringTranslateExtension('search').tr(),
+          hintText: S.of(context).search,
           hintStyle: AppTextstyles.withColor(
             AppTextstyles.buttonMedium,
             isDark ? Colors.grey[400]! : Colors.grey[600]!,

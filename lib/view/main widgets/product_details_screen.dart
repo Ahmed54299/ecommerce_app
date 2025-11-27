@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/widgets/size_selector.dart';
@@ -25,7 +26,7 @@ class ProductDetailsScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          'Details',
+          S.of(context).details,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -110,7 +111,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
                   SizedBox(height: screenHeight * 0.02),
                   Text(
-                    'Select Size',
+                    S.of(context).selectsize,
                     style: AppTextstyles.withColor(
                       AppTextstyles.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -121,7 +122,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   const SizeSelector(),
                   SizedBox(height: screenHeight * 0.02),
                   Text(
-                    'Description',
+                    S.of(context).description,
                     style: AppTextstyles.withColor(
                       AppTextstyles.labelMedium,
                       Theme.of(context).textTheme.headlineMedium!.color!,
@@ -159,7 +160,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    'Add To Cart',
+                    S.of(context).ATC,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Theme.of(context).textTheme.bodyLarge!.color!,
@@ -178,7 +179,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     backgroundColor: Theme.of(context).primaryColor,
                   ),
                   child: Text(
-                    'Buy Now',
+                    S.of(context).buynow,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,
@@ -212,10 +213,10 @@ class ProductDetailsScreen extends StatelessWidget {
         sharePositionOrigin: box!.localToGlobal(Offset.zero) & box.size,
       );
       if (result.status == ShareResultStatus.success) {
-        debugPrint('Thank you for sharing!');
+        debugPrint(S.of(context).Tyfs);
       }
     } catch (e) {
-      debugPrint('Error Sharing: $e');
+      debugPrint('${S.of(context).error} $e');
     }
   }
 }

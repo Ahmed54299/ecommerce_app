@@ -1,12 +1,12 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
-import 'package:ecommerce_app/view/forgot_password_screen.dart';
-import 'package:ecommerce_app/view/main_screen.dart';
-import 'package:ecommerce_app/view/sign_up_screen.dart';
+import 'package:ecommerce_app/view/start%20widgets/forgot_password_screen.dart';
+import 'package:ecommerce_app/view/main%20widgets/main_screen.dart';
+import 'package:ecommerce_app/view/start%20widgets/sign_up_screen.dart';
 import 'package:ecommerce_app/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:easy_localization/easy_localization.dart';
 
 class SigninScreen extends StatelessWidget {
   SigninScreen({super.key});
@@ -27,7 +27,7 @@ class SigninScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 40),
               Text(
-                StringTranslateExtension('welcomeback').tr(),
+                S.of(context).welcomeback,
                 style: AppTextstyles.withColor(
                   AppTextstyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -35,7 +35,7 @@ class SigninScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                StringTranslateExtension('Sitcs').tr(),
+                S.of(context).Sitcs,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -44,16 +44,16 @@ class SigninScreen extends StatelessWidget {
               const SizedBox(height: 40),
               //emial textfield
               CustomTextfield(
-                label: StringTranslateExtension('email').tr(),
+                label: S.of(context).email,
                 prefixIcon: Icons.email_outlined,
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return StringTranslateExtension('Peye').tr();
+                    return S.of(context).Peye;
                   }
                   if (!GetUtils.isEmail(value)) {
-                    return StringTranslateExtension('Peave').tr();
+                    return S.of(context).Peave;
                   }
                   return null;
                 },
@@ -61,14 +61,14 @@ class SigninScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //password textfield
               CustomTextfield(
-                label: StringTranslateExtension('password').tr(),
+                label: S.of(context).password,
                 prefixIcon: Icons.lock_outline,
                 keyboardType: TextInputType.visiblePassword,
                 isPassword: true,
                 controller: _passwordController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return StringTranslateExtension('Peyp').tr();
+                    return S.of(context).Peyp;
                   }
                   return null;
                 },
@@ -81,7 +81,7 @@ class SigninScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () => Get.to(() => ForgotPasswordScreen()),
                   child: Text(
-                    StringTranslateExtension('FPw').tr(),
+                    S.of(context).FPw,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Theme.of(context).primaryColor,
@@ -103,7 +103,7 @@ class SigninScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    StringTranslateExtension('signin').tr(),
+                    S.of(context).signin,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,
@@ -117,7 +117,7 @@ class SigninScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    StringTranslateExtension('Dhaaw').tr(),
+                    S.of(context).Dhaaw,
                     style: AppTextstyles.withColor(
                       AppTextstyles.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -126,7 +126,7 @@ class SigninScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () => Get.to(() => SignUpScreen()),
                     child: Text(
-                      StringTranslateExtension('signup').tr(),
+                      S.of(context).signup,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).primaryColor,

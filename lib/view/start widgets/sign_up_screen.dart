@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
-import 'package:ecommerce_app/view/main_screen.dart';
-import 'package:ecommerce_app/view/signin_screen.dart';
+import 'package:ecommerce_app/view/main%20widgets/main_screen.dart';
+import 'package:ecommerce_app/view/start%20widgets/signin_screen.dart';
 import 'package:ecommerce_app/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
