@@ -51,7 +51,7 @@ class CheckoutScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: CheckoutBottomBar(
-        totalAmount: S.of(context).s662 as double,
+        totalAmount: 662.10,
         onPiaceOrder: () {
           //generate a random order number(in real app, this would come from backend)
           final orderNumber =
@@ -59,7 +59,7 @@ class CheckoutScreen extends StatelessWidget {
           Get.to(
             () => OrderConfirmationScreen(
               orderNumber: orderNumber,
-              totalAmount: S.of(context).s662 as double,
+              totalAmount: 662.10,
             ),
           );
         },

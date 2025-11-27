@@ -1,5 +1,6 @@
 //import 'package:easy_localization/easy_localization.dart';
 import 'package:ecommerce_app/controllers/auth_controller.dart';
+import 'package:ecommerce_app/controllers/locale_controller.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_themes.dart';
@@ -13,6 +14,7 @@ void main() async {
   // WidgetsFlutterBinding.ensureInitialized();
   // await EasyLocalization.ensureInitialized();
   await GetStorage.init();
+  Get.put(LocaleController());
   Get.put(ThemeController());
   Get.put(AuthController());
   runApp(const MyApp());
@@ -34,27 +36,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localeController = Get.find<LocaleController>();
     final themeController = Get.find<ThemeController>();
-    return GetMaterialApp(
-      //local selected
-      // localizationsDelegates: context.localizationDelegates,
-      // supportedLocales: context.supportedLocales,
-      // locale: context.locale,
-      locale: const Locale('en'),
-      localizationsDelegates: [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: S.delegate.supportedLocales,
-      debugShowCheckedModeBanner: false,
-      title: 'Fashion Store',
-      theme: AppThemes.light,
-      darkTheme: AppThemes.dark,
-      themeMode: themeController.theme,
-      defaultTransition: Transition.fade,
-      home: SplashScreen(),
+    return Obx(
+      () => GetMaterialApp(
+        //local selected
+        // localizationsDelegates: context.localizationDelegates,
+        // supportedLocales: context.supportedLocales,
+        // locale: context.locale,
+        locale: localeController.appLocale.value,
+        localizationsDelegates: [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
+        debugShowCheckedModeBanner: false,
+        title: 'Fashion Store',
+        theme: AppThemes.light,
+        darkTheme: AppThemes.dark,
+        themeMode: themeController.theme,
+        defaultTransition: Transition.fade,
+        home: SplashScreen(),
+      ),
     );
   }
 }

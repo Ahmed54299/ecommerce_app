@@ -1099,9 +1099,14 @@ class S {
     return Intl.message('Language', name: 'Language', desc: '', args: []);
   }
 
-  /// `Change Language`
+  /// `Change Language To Arabic`
   String get changel {
-    return Intl.message('Change Language', name: 'changel', desc: '', args: []);
+    return Intl.message(
+      'Change Language To Arabic',
+      name: 'changel',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Details`

@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/controllers/locale_controller.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/notifications/view/notifications_screen.dart';
 import 'package:ecommerce_app/view/all_products_screen.dart';
@@ -49,6 +50,13 @@ class HomeScreen extends StatelessWidget {
                   //translate icon
                   IconButton(
                     onPressed: () {
+                      final localeCtrl = Get.find<LocaleController>();
+
+                      if (localeCtrl.appLocale.value.languageCode == 'ar') {
+                        localeCtrl.changeLang('en');
+                      } else {
+                        localeCtrl.changeLang('ar');
+                      }
                       // if (Locale('en') == true) {
                       //   context.setLocale(Locale('ar'));
                       // } else {

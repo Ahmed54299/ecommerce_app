@@ -174,7 +174,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "buynow": MessageLookupByLibrary.simpleMessage("Buy Now"),
     "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
-    "changel": MessageLookupByLibrary.simpleMessage("Change Language"),
+    "changel": MessageLookupByLibrary.simpleMessage(
+      "Change Language To Arabic",
+    ),
     "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
     "city": MessageLookupByLibrary.simpleMessage("City"),
     "clothing": MessageLookupByLibrary.simpleMessage("Clothing"),

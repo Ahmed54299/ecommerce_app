@@ -186,7 +186,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "buynow": MessageLookupByLibrary.simpleMessage("اشتري الآن"),
     "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
     "categories": MessageLookupByLibrary.simpleMessage("الفئات"),
-    "changel": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
+    "changel": MessageLookupByLibrary.simpleMessage("تغيير اللغة للإنجليزية"),
     "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
     "city": MessageLookupByLibrary.simpleMessage("المدينة"),
     "clothing": MessageLookupByLibrary.simpleMessage("ملابس"),

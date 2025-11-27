@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/controllers/locale_controller.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/privacy%20policy/views/screens/privacy_policy_screen.dart';
 import 'package:ecommerce_app/features/terms%20of%20service/view/screens/terms_of_service_screen.dart';
@@ -57,7 +58,14 @@ class SettingsScreen extends StatelessWidget {
                 S.of(context).Language,
                 S.of(context).changel,
                 Icons.language_outlined,
-                onTap: () async {
+                onTap: () {
+                  final localeCtrl = Get.find<LocaleController>();
+
+                  if (localeCtrl.appLocale.value.languageCode == 'ar') {
+                    localeCtrl.changeLang('en');
+                  } else {
+                    localeCtrl.changeLang('ar');
+                  }
                   // context.setLocale(Locale('ar'));
                   // Restart.restartApp();
                 },
