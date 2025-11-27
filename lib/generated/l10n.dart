@@ -1093,6 +1093,11 @@ class S {
   String get CSing {
     return Intl.message('Continue Shopping', name: 'CSing', desc: '', args: []);
   }
+
+  /// `Language`
+  String get Language {
+    return Intl.message('Language', name: 'Language', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

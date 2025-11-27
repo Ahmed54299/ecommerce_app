@@ -1,10 +1,11 @@
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/privacy%20policy/views/screens/privacy_policy_screen.dart';
 import 'package:ecommerce_app/features/terms%20of%20service/view/screens/terms_of_service_screen.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:restart_app/restart_app.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -23,7 +24,7 @@ class SettingsScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          S.of(context).settings,
+          StringTranslateExtension('settings').tr(),
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -34,44 +35,62 @@ class SettingsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildSection(context, S.of(context).appearance, [
-              _buildThemeToggle(context),
-            ]),
-            _buildSection(context, S.of(context).notifications, [
-              _buildSwitchTile(
-                context,
-                S.of(context).PN,
-                S.of(context).Rpnaoap,
-                true,
-              ),
-              _buildSwitchTile(
-                context,
-                S.of(context).EN,
-                S.of(context).Reuayo,
-                false,
-              ),
-            ]),
-            _buildSection(context, S.of(context).privacy, [
+            _buildSection(
+              context,
+              StringTranslateExtension('appearance').tr(),
+              [_buildThemeToggle(context)],
+            ),
+            _buildSection(
+              context,
+              StringTranslateExtension('notifications').tr(),
+              [
+                _buildSwitchTile(
+                  context,
+                  StringTranslateExtension('PN').tr(),
+                  StringTranslateExtension('Rpnaoap').tr(),
+                  true,
+                ),
+                _buildSwitchTile(
+                  context,
+                  StringTranslateExtension('EN').tr(),
+                  StringTranslateExtension('Reuayo').tr(),
+                  false,
+                ),
+              ],
+            ),
+            _buildSection(context, StringTranslateExtension('privacy').tr(), [
               _buildNavigationTile(
                 context,
-                S.of(context).PrivacyP,
-                S.of(context).Vopp,
+                StringTranslateExtension('PrivacyP').tr(),
+                StringTranslateExtension('Vopp').tr(),
                 Icons.privacy_tip_outlined,
                 onTap: () => Get.to(() => const PrivacyPolicyScreen()),
               ),
               _buildNavigationTile(
                 context,
-                S.of(context).ToS,
-                S.of(context).Rotos,
+                StringTranslateExtension('ToS').tr(),
+                StringTranslateExtension('Rotos').tr(),
                 Icons.description_outlined,
                 onTap: () => Get.to(() => const TermsOfServiceScreen()),
               ),
             ]),
-            _buildSection(context, S.of(context).about, [
+            _buildSection(context, StringTranslateExtension('Language').tr(), [
               _buildNavigationTile(
                 context,
-                S.of(context).appversion,
-                S.of(context).v10,
+                StringTranslateExtension('Language').tr(),
+                StringTranslateExtension('changel').tr(),
+                Icons.language_outlined,
+                onTap: () async {
+                  context.setLocale(Locale('ar'));
+                  Restart.restartApp();
+                },
+              ),
+            ]),
+            _buildSection(context, StringTranslateExtension('about').tr(), [
+              _buildNavigationTile(
+                context,
+                StringTranslateExtension('appversion').tr(),
+                StringTranslateExtension('v10').tr(),
                 Icons.info_outline,
               ),
             ]),
@@ -131,7 +150,7 @@ class SettingsScreen extends StatelessWidget {
             color: Theme.of(context).primaryColor,
           ),
           title: Text(
-            S.of(context).darkmode,
+            StringTranslateExtension('darkmode').tr(),
             style: AppTextstyles.withColor(
               AppTextstyles.bodyMedium,
               Theme.of(context).textTheme.bodyLarge!.color!,

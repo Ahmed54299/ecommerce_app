@@ -69,6 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "InaPcsfa": MessageLookupByLibrary.simpleMessage(
       "Information not available. Please contact support for assistance",
     ),
+    "Language": MessageLookupByLibrary.simpleMessage("Language"),
     "LuM2024": MessageLookupByLibrary.simpleMessage("Last updated: March 2024"),
     "MO": MessageLookupByLibrary.simpleMessage("My Orders"),
     "MSA4B": MessageLookupByLibrary.simpleMessage("123 Main Street, Apt 4B"),

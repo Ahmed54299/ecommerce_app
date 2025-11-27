@@ -3,11 +3,11 @@ import 'package:ecommerce_app/features/edit%20profile/views/screens/edit_profile
 import 'package:ecommerce_app/features/help%20center/views/screens/help_center_screen.dart';
 import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
 import 'package:ecommerce_app/features/shipping%20address/shipping_address_screen.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/settings_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:get/get.dart';
 
 class AccountScreen extends StatelessWidget {
@@ -21,7 +21,7 @@ class AccountScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          S.of(context).myaccount,
+          StringTranslateExtension('myaccount').tr(),
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -67,7 +67,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            S.of(context).username,
+            StringTranslateExtension('username').tr(),
             style: AppTextstyles.withColor(
               AppTextstyles.h2,
               Theme.of(context).textTheme.bodyLarge!.color!,
@@ -75,7 +75,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            S.of(context).useremail,
+            StringTranslateExtension('useremail').tr(),
             style: AppTextstyles.withColor(
               AppTextstyles.bodyMedium,
               isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -92,7 +92,7 @@ class AccountScreen extends StatelessWidget {
               ),
             ),
             child: Text(
-              S.of(context).EP,
+              StringTranslateExtension('EP').tr(),
               style: AppTextstyles.withColor(
                 AppTextstyles.buttonMedium,
                 Theme.of(context).textTheme.bodyLarge!.color!,
@@ -107,10 +107,22 @@ class AccountScreen extends StatelessWidget {
   Widget _buildMenuSection(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final menuItems = [
-      {'icon': Icons.shopping_bag_outlined, 'title': S.of(context).MO},
-      {'icon': Icons.location_on_outlined, 'title': S.of(context).SA},
-      {'icon': Icons.help_outline, 'title': S.of(context).HC},
-      {'icon': Icons.logout_outlined, 'title': S.of(context).logout},
+      {
+        'icon': Icons.shopping_bag_outlined,
+        'title': StringTranslateExtension('MO').tr(),
+      },
+      {
+        'icon': Icons.location_on_outlined,
+        'title': StringTranslateExtension('SA').tr(),
+      },
+      {
+        'icon': Icons.help_outline,
+        'title': StringTranslateExtension('HC').tr(),
+      },
+      {
+        'icon': Icons.logout_outlined,
+        'title': StringTranslateExtension('logout').tr(),
+      },
     ];
 
     return Padding(
@@ -149,13 +161,16 @@ class AccountScreen extends StatelessWidget {
                 color: isDark ? Colors.grey[400] : Colors.grey[600],
               ),
               onTap: () {
-                if (item['title'] == S.of(context).logout) {
+                if (item['title'] == StringTranslateExtension('logout').tr()) {
                   _showLogoutDialog(context);
-                } else if (item['title'] == S.of(context).MO) {
+                } else if (item['title'] ==
+                    StringTranslateExtension('MO').tr()) {
                   Get.to(() => MyOrdersScreen());
-                } else if (item['title'] == S.of(context).SA) {
+                } else if (item['title'] ==
+                    StringTranslateExtension('SA').tr()) {
                   Get.to(() => ShippingAddressScreen());
-                } else if (item['title'] == S.of(context).HC) {
+                } else if (item['title'] ==
+                    StringTranslateExtension('HC').tr()) {
                   Get.to(() => const HelpCenterScreen());
                 }
               },
@@ -194,7 +209,7 @@ class AccountScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              S.of(context).Ayswtlw,
+              StringTranslateExtension('Ayswtlw').tr(),
               style: AppTextstyles.withColor(
                 AppTextstyles.bodyMedium,
                 isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -216,7 +231,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).cancel,
+                      StringTranslateExtension('cancel').tr(),
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -243,7 +258,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).logout,
+                      StringTranslateExtension('logout').tr(),
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Colors.white,

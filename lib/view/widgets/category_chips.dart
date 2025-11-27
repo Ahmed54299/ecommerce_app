@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/utils/app_textstyles.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class CategoryChips extends StatefulWidget {
@@ -10,7 +11,7 @@ class CategoryChips extends StatefulWidget {
 
 class _CategoryChipsState extends State<CategoryChips> {
   int selectedIndex = 0;
-  final categories = ['All', 'Men', 'Women', 'Girls'];//S.of(context).value
+  final categories = ['All', 'Men', 'Women', 'Girls']; //S.of(context).value
 
   @override
   Widget build(BuildContext context) {

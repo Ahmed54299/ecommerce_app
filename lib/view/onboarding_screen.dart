@@ -1,9 +1,9 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -18,18 +18,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   List<OnboardingItem> get _items => [
     OnboardingItem(
-      description: S.of(context).Etnftafyus,
-      title: S.of(context).DLT,
+      description: StringTranslateExtension('Etnftafyus').tr(),
+      title: StringTranslateExtension('DLT').tr(),
       image: 'assets/images/intro.png',
     ),
     OnboardingItem(
-      description: S.of(context).Spqpftbw,
-      title: S.of(context).qp,
+      description: StringTranslateExtension('Spqpftbw').tr(),
+      title: StringTranslateExtension('qp').tr(),
       image: 'assets/images/intro1.png',
     ),
     OnboardingItem(
-      description: S.of(context).Sasseayf,
-      title: S.of(context).ES,
+      description: StringTranslateExtension('Sasseayf').tr(),
+      title: StringTranslateExtension('ES').tr(),
       image: 'assets/images/intro2.png',
     ),
   ];
@@ -121,7 +121,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 TextButton(
                   onPressed: () => _handleGetStarted(),
                   child: Text(
-                    S.of(context).skip,
+                    StringTranslateExtension('skip').tr(),
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -151,8 +151,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                   child: Text(
                     _currentPage < _items.length - 1
-                        ? S.of(context).next
-                        : S.of(context).getstarted,
+                        ? StringTranslateExtension('next').tr()
+                        : StringTranslateExtension('getstarted').tr(),
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,

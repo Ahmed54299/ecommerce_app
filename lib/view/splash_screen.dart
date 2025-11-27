@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/view/main_screen.dart';
 import 'package:ecommerce_app/view/onboarding_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({super.key});
@@ -100,7 +100,7 @@ class SplashScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          S.of(context).fashion,
+                          StringTranslateExtension('fashion').tr(),
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 32,
@@ -109,7 +109,7 @@ class SplashScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          S.of(context).store,
+                          StringTranslateExtension('store').tr(),
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 32,
@@ -135,7 +135,7 @@ class SplashScreen extends StatelessWidget {
                   return Opacity(opacity: value, child: child);
                 },
                 child: Text(
-                  S.of(context).SMs,
+                  StringTranslateExtension('SMs').tr(),
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.9),

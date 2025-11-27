@@ -41,7 +41,7 @@ class PaymentMethodCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '${S.of(context).Vei4242}',
+                      S.of(context).Vei4242,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodyLarge,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -49,7 +49,7 @@ class PaymentMethodCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      '${S.of(context).expires1224}',
+                      S.of(context).expires1224,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodySmall,
                         isDark ? Colors.grey[400]! : Colors.grey[600]!,

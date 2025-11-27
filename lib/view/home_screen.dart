@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/notifications/view/notifications_screen.dart';
 import 'package:ecommerce_app/view/all_products_screen.dart';
@@ -8,6 +9,7 @@ import 'package:ecommerce_app/view/widgets/product_grid.dart';
 import 'package:ecommerce_app/view/widgets/sale_banner.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:restart_app/restart_app.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -33,11 +35,11 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hello Alex',//S.of(context).hello
+                        'Hello Alex', //S.of(context).hello
                         style: TextStyle(color: Colors.grey, fontSize: 14),
                       ),
                       Text(
-                        'Good Morning',// S.of(context).goodmorning
+                        'Good Morning', // S.of(context).goodmorning
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -46,6 +48,15 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   const Spacer(),
+                  //translate icon
+                  IconButton(
+                    onPressed: () {
+                      context.setLocale(Locale('ar'));
+
+                      Restart.restartApp();
+                    }, // => Locale('en'),
+                    icon: const Icon(Icons.language_outlined),
+                  ),
                   //notification icon
                   IconButton(
                     onPressed: () => Get.to(() => NotificationsScreen()),
@@ -87,13 +98,13 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'Popular Product',//S.of(context).PP
+                    'Popular Product', //S.of(context).PP
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   GestureDetector(
                     onTap: () => Get.to(() => const AllProductsScreen()),
                     child: Text(
-                      'See All',//S.of(context).seeall
+                      'See All', //S.of(context).seeall
                       style: TextStyle(color: Theme.of(context).primaryColor),
                     ),
                   ),
