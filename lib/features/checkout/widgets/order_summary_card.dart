@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class OrderSummaryCard extends StatelessWidget {
   const OrderSummaryCard({super.key});
@@ -25,33 +25,16 @@ class OrderSummaryCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          _buildSummaryRow(
-            context,
-            S.of(context).subtotal,
-            '\$${S.of(context).s599}',
-          ),
+          _buildSummaryRow(context, 'subtotal'.tr, 's599'.tr),
           const SizedBox(height: 8),
-          _buildSummaryRow(
-            context,
-            S.of(context).shipping,
-            '\$${S.of(context).s10}',
-          ),
+          _buildSummaryRow(context, 'shipping'.tr, 's10'.tr),
           const SizedBox(height: 8),
-          _buildSummaryRow(
-            context,
-            S.of(context).tax,
-            '\$${S.of(context).s53}',
-          ),
+          _buildSummaryRow(context, 'tax'.tr, 's53'.tr),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 12),
             child: Divider(),
           ),
-          _buildSummaryRow(
-            context,
-            S.of(context).total,
-            '\$${S.of(context).s662}',
-            isTotal: true,
-          ),
+          _buildSummaryRow(context, 'total'.tr, 's662'.tr, isTotal: true),
         ],
       ),
     );

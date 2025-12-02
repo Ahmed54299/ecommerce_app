@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/main%20widgets/main_screen.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +32,7 @@ class OrderConfirmationScreen extends StatelessWidget {
               ),
               const SizedBox(height: 32),
               Text(
-                S.of(context).OC,
+                'OC'.tr,
                 textAlign: TextAlign.center,
                 style: AppTextstyles.withColor(
                   AppTextstyles.h2,
@@ -42,7 +41,7 @@ class OrderConfirmationScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               Text(
-                'Your order #$orderNumber has successfully placed.',
+                '${'Your order'.tr} #$orderNumber ${'has successfully placed.'.tr}',
                 textAlign: TextAlign.center,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
@@ -65,7 +64,7 @@ class OrderConfirmationScreen extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  S.of(context).TO,
+                  'TO'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.buttonMedium,
                     Colors.white,
@@ -78,7 +77,7 @@ class OrderConfirmationScreen extends StatelessWidget {
                   Get.offAll(() => const MainScreen());
                 },
                 child: Text(
-                  S.of(context).CSing,
+                  'CSing'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.buttonMedium,
                     Theme.of(context).primaryColor,

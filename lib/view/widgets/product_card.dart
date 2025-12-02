@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class ProductCard extends StatelessWidget {
   final Product product;
@@ -74,7 +75,7 @@ class ProductCard extends StatelessWidget {
                     ),
                     //discount text
                     child: Text(
-                      '${calculateDiscount(product.price, product.oldPrice!)}% OFF',
+                      '${calculateDiscount(product.price, product.oldPrice!)}% ${'OFF'.tr}',
                       style: AppTextstyles.withColor(
                         AppTextstyles.withWeight(
                           AppTextstyles.bodySmall,

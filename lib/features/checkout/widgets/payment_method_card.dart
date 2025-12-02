@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class PaymentMethodCard extends StatelessWidget {
   const PaymentMethodCard({super.key});
@@ -41,7 +41,7 @@ class PaymentMethodCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      S.of(context).Vei4242,
+                      'Vei4242'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodyLarge,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -49,7 +49,7 @@ class PaymentMethodCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      S.of(context).expires1224,
+                      'expires1224'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodySmall,
                         isDark ? Colors.grey[400]! : Colors.grey[600]!,

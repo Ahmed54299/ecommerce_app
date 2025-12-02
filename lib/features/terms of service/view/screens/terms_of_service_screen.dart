@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/features/privacy%20policy/views/widgets/info_section.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,7 +22,7 @@ class TermsOfServiceScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          S.of(context).ToS,
+          'ToS'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -36,40 +35,46 @@ class TermsOfServiceScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const InfoSection(
-                title: 'Welcome to Fashion Store',
+              InfoSection(
+                title: 'Welcome to Fashion Store'.tr,
                 content:
-                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.'
+                        .tr,
               ),
-              const InfoSection(
-                title: 'Account Registration',
+              InfoSection(
+                title: 'Account Registration'.tr,
                 content:
-                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.'
+                        .tr,
               ),
 
-              const InfoSection(
-                title: 'User REsponsibilities',
+              InfoSection(
+                title: 'User REsponsibilities'.tr,
                 content:
-                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.'
+                        .tr,
               ),
-              const InfoSection(
-                title: 'Privacy Policy',
+              InfoSection(
+                title: 'Privacy Policy'.tr,
                 content:
-                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.'
+                        .tr,
               ),
-              const InfoSection(
-                title: 'Intellectual Property',
+              InfoSection(
+                title: 'Intellectual Property'.tr,
                 content:
-                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.'
+                        .tr,
               ),
-              const InfoSection(
-                title: 'Termination',
+              InfoSection(
+                title: 'Termination'.tr,
                 content:
-                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.'
+                        .tr,
               ),
-              const SizedBox(height: 24),
+              SizedBox(height: 24),
               Text(
-                'Last updated: March 2024',
+                'Last updated: December 2025'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodySmall,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,

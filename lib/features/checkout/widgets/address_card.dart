@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class AddressCard extends StatelessWidget {
   const AddressCard({super.key});
@@ -37,7 +37,7 @@ class AddressCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      S.of(context).home,
+                      'home'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodyLarge,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -45,7 +45,7 @@ class AddressCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      "${S.of(context).MSA4B}\n${S.of(context).NYNY101}",
+                      "${'MSA4B'.tr}\n${'NYNY101'.tr}",
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodySmall,
                         isDark ? Colors.grey[400]! : Colors.grey[600]!,

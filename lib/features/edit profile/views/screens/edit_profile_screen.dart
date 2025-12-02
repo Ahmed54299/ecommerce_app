@@ -1,6 +1,5 @@
 import 'package:ecommerce_app/features/edit%20profile/views/widgets/profile_form.dart';
 import 'package:ecommerce_app/features/edit%20profile/views/widgets/profile_image.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +17,7 @@ class EditProfileScreen extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios),
         ),
         title: Text(
-          S.of(context).editprofile,
+          'editprofile'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,

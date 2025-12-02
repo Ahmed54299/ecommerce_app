@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/features/shipping%20address/models/address.dart';
 import 'package:ecommerce_app/features/shipping%20address/repositories/address_repository.dart';
 import 'package:ecommerce_app/features/shipping%20address/widgets/address_card.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,7 +19,7 @@ class ShippingAddressScreen extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios),
         ),
         title: Text(
-          S.of(context).SA,
+          'SA'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -72,7 +71,7 @@ class ShippingAddressScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  S.of(context).editaddress,
+                  'editaddress'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.h3,
                     Theme.of(context).textTheme.bodyLarge!.color!,
@@ -90,21 +89,21 @@ class ShippingAddressScreen extends StatelessWidget {
             const SizedBox(height: 24),
             _buildTextField(
               context,
-              S.of(context).label,
+              'label'.tr,
               Icons.label_outline,
               initialValue: address.label,
             ),
             const SizedBox(height: 16),
             _buildTextField(
               context,
-              S.of(context).fulladdress,
+              'fulladdress'.tr,
               Icons.location_on_outlined,
               initialValue: address.fullAddress,
             ),
             const SizedBox(height: 24),
             _buildTextField(
               context,
-              S.of(context).city,
+              'city'.tr,
               Icons.location_city_outlined,
               initialValue: address.city,
             ),
@@ -114,7 +113,7 @@ class ShippingAddressScreen extends StatelessWidget {
                 Expanded(
                   child: _buildTextField(
                     context,
-                    S.of(context).state,
+                    'state'.tr,
                     Icons.map_outlined,
                     initialValue: address.state,
                   ),
@@ -123,7 +122,7 @@ class ShippingAddressScreen extends StatelessWidget {
                 Expanded(
                   child: _buildTextField(
                     context,
-                    S.of(context).zip,
+                    'zip'.tr,
                     Icons.pin_outlined,
                     initialValue: address.zipCode,
                   ),
@@ -146,7 +145,7 @@ class ShippingAddressScreen extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  S.of(context).updateaddress,
+                  'updateaddress'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.buttonMedium,
                     Colors.white,
@@ -187,7 +186,7 @@ class ShippingAddressScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              S.of(context).deleteaddress,
+              'deleteaddress'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.h3,
                 Theme.of(context).textTheme.bodyLarge!.color!,
@@ -195,7 +194,7 @@ class ShippingAddressScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              S.of(context).Aysywtdta,
+              'Aysywtdta'.tr,
               textAlign: TextAlign.center,
               style: AppTextstyles.withColor(
                 AppTextstyles.bodyMedium,
@@ -218,7 +217,7 @@ class ShippingAddressScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).cancel,
+                      'cancel'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -242,7 +241,7 @@ class ShippingAddressScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).delete,
+                      'delete'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Colors.white,
@@ -309,7 +308,7 @@ class ShippingAddressScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  S.of(context).ANA,
+                  'ANA'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.h3,
                     Theme.of(context).textTheme.bodyLarge!.color!,
@@ -325,36 +324,28 @@ class ShippingAddressScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 24),
-            _buildTextField(context, S.of(context).label, Icons.label_outline),
+            _buildTextField(context, 'label'.tr, Icons.label_outline),
             const SizedBox(height: 16),
             _buildTextField(
               context,
-              S.of(context).fulladdress,
+              'fulladdress'.tr,
               Icons.location_on_outlined,
             ),
             const SizedBox(height: 16),
-            _buildTextField(
-              context,
-              S.of(context).city,
-              Icons.location_city_outlined,
-            ),
+            _buildTextField(context, 'city'.tr, Icons.location_city_outlined),
             const SizedBox(height: 16),
             Row(
               children: [
                 Expanded(
                   child: _buildTextField(
                     context,
-                    S.of(context).state,
+                    'state'.tr,
                     Icons.map_outlined,
                   ),
                 ),
                 const SizedBox(width: 16),
                 Expanded(
-                  child: _buildTextField(
-                    context,
-                    S.of(context).zip,
-                    Icons.pin_outlined,
-                  ),
+                  child: _buildTextField(context, 'zip'.tr, Icons.pin_outlined),
                 ),
               ],
             ),
@@ -374,7 +365,7 @@ class ShippingAddressScreen extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  S.of(context).saveaddress,
+                  'saveaddress'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.buttonMedium,
                     Colors.white,

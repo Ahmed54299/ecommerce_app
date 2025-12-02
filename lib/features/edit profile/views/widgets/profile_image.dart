@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -89,7 +88,7 @@ class ProfileImage extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             Text(
-              S.of(context).CPP,
+              'CPP'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.h3,
                 Theme.of(context).textTheme.bodyLarge!.color!,
@@ -98,7 +97,7 @@ class ProfileImage extends StatelessWidget {
             const SizedBox(height: 24),
             _buildOptionTile(
               context,
-              S.of(context).TP,
+              'TP'.tr,
               Icons.camera_alt_outlined,
               () => Get.back(),
               isDark,
@@ -106,7 +105,7 @@ class ProfileImage extends StatelessWidget {
             const SizedBox(height: 16),
             _buildOptionTile(
               context,
-              S.of(context).CfG,
+              'CfG'.tr,
               Icons.photo_library_outlined,
               () => Get.back(),
               isDark,

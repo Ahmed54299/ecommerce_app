@@ -21,7 +21,7 @@ class AllProductsScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          'All Products',
+          'All Products'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,

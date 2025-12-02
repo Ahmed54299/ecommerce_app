@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
@@ -29,10 +28,10 @@ class ProfileForm extends StatelessWidget {
                 ),
               ],
             ),
-            child: const CustomTextfield(
-              label: 'Full Name',
+            child: CustomTextfield(
+              label: 'fullname'.tr,
               prefixIcon: Icons.person_outline,
-              initialValue: 'Alex Johnson',
+              initialValue: 'username'.tr,
             ),
           ),
           const SizedBox(height: 16),
@@ -50,8 +49,8 @@ class ProfileForm extends StatelessWidget {
                 ),
               ],
             ),
-            child: const CustomTextfield(
-              label: 'Email',
+            child: CustomTextfield(
+              label: 'email'.tr,
               prefixIcon: Icons.email_outlined,
               initialValue: 'alexJohnson@gmail.com',
               keyboardType: TextInputType.emailAddress,
@@ -72,8 +71,8 @@ class ProfileForm extends StatelessWidget {
                 ),
               ],
             ),
-            child: const CustomTextfield(
-              label: 'Phone Number',
+            child: CustomTextfield(
+              label: 'Phone Number'.tr,
               prefixIcon: Icons.phone_outlined,
               initialValue: '123933939',
               keyboardType: TextInputType.phone,
@@ -95,7 +94,7 @@ class ProfileForm extends StatelessWidget {
                 ),
               ),
               child: Text(
-                S.of(context).SC,
+                'SC'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.buttonMedium,
                   Colors.white,

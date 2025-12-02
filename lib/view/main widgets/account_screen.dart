@@ -3,7 +3,6 @@ import 'package:ecommerce_app/features/edit%20profile/views/screens/edit_profile
 import 'package:ecommerce_app/features/help%20center/views/screens/help_center_screen.dart';
 import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
 import 'package:ecommerce_app/features/shipping%20address/shipping_address_screen.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/main%20widgets/settings_screen.dart';
 import 'package:ecommerce_app/view/start%20widgets/signin_screen.dart';
@@ -15,13 +14,13 @@ class AccountScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenSize = MediaQuery.of(context).size;
+    // final screenSize = MediaQuery.of(context).size;
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          S.of(context).myaccount,
+          'myaccount'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -67,7 +66,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            S.of(context).username,
+            'username'.tr,
             style: AppTextstyles.withColor(
               AppTextstyles.h2,
               Theme.of(context).textTheme.bodyLarge!.color!,
@@ -75,7 +74,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            S.of(context).useremail,
+            'useremail'.tr,
             style: AppTextstyles.withColor(
               AppTextstyles.bodyMedium,
               isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -92,7 +91,7 @@ class AccountScreen extends StatelessWidget {
               ),
             ),
             child: Text(
-              S.of(context).EP,
+              'EP'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.buttonMedium,
                 Theme.of(context).textTheme.bodyLarge!.color!,
@@ -107,10 +106,10 @@ class AccountScreen extends StatelessWidget {
   Widget _buildMenuSection(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final menuItems = [
-      {'icon': Icons.shopping_bag_outlined, 'title': S.of(context).MO},
-      {'icon': Icons.location_on_outlined, 'title': S.of(context).SA},
-      {'icon': Icons.help_outline, 'title': S.of(context).HC},
-      {'icon': Icons.logout_outlined, 'title': S.of(context).logout},
+      {'icon': Icons.shopping_bag_outlined, 'title': 'MO'.tr},
+      {'icon': Icons.location_on_outlined, 'title': 'SA'.tr},
+      {'icon': Icons.help_outline, 'title': 'HC'.tr},
+      {'icon': Icons.logout_outlined, 'title': 'logout'.tr},
     ];
 
     return Padding(
@@ -149,13 +148,13 @@ class AccountScreen extends StatelessWidget {
                 color: isDark ? Colors.grey[400] : Colors.grey[600],
               ),
               onTap: () {
-                if (item['title'] == S.of(context).logout) {
+                if (item['title'] == 'logout'.tr) {
                   _showLogoutDialog(context);
-                } else if (item['title'] == S.of(context).MO) {
+                } else if (item['title'] == 'MO'.tr) {
                   Get.to(() => MyOrdersScreen());
-                } else if (item['title'] == S.of(context).SA) {
+                } else if (item['title'] == 'SA'.tr) {
                   Get.to(() => ShippingAddressScreen());
-                } else if (item['title'] == S.of(context).HC) {
+                } else if (item['title'] == 'HC'.tr) {
                   Get.to(() => const HelpCenterScreen());
                 }
               },
@@ -194,7 +193,7 @@ class AccountScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              S.of(context).Ayswtlw,
+              'Ayswtlw'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.bodyMedium,
                 isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -216,7 +215,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).cancel,
+                      'cancel'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -243,7 +242,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).logout,
+                      'logout'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Colors.white,

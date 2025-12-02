@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class CheckoutBottomBar extends StatelessWidget {
   final double totalAmount;
@@ -41,7 +41,7 @@ class CheckoutBottomBar extends StatelessWidget {
             ),
           ),
           child: Text(
-            '${S.of(context).PO} (\$${totalAmount.toStringAsFixed(2)})',
+            '${'PO'.tr} (\$${totalAmount.toStringAsFixed(2)})',
             style: AppTextstyles.withColor(
               AppTextstyles.buttonMedium,
               Colors.white,

@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/features/help%20center/views/widgets/question_card.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class PopularQuestionsSection extends StatelessWidget {
   const PopularQuestionsSection({super.key});
@@ -14,22 +14,16 @@ class PopularQuestionsSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            S.of(context).PQ,
+            'PQ'.tr,
             style: AppTextstyles.withColor(
               AppTextstyles.h3,
               Theme.of(context).textTheme.bodyLarge!.color!,
             ),
           ),
           const SizedBox(height: 16),
-          const QuestionCard(
-            title: 'How to track my order?',
-            icon: Icons.local_shipping_outlined,
-          ),
+          QuestionCard(title: 'Httmo'.tr, icon: Icons.local_shipping_outlined),
           const SizedBox(height: 12),
-          const QuestionCard(
-            title: 'How to return an item?',
-            icon: Icons.local_shipping_outlined,
-          ),
+          QuestionCard(title: 'Htraiw'.tr, icon: Icons.local_shipping_outlined),
         ],
       ),
     );

@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/features/help%20center/views/widgets/contact_support_section.dart';
 import 'package:ecommerce_app/features/help%20center/views/widgets/help_categories_section.dart';
 import 'package:ecommerce_app/features/help%20center/views/widgets/popular_questions_section.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,7 +22,7 @@ class HelpCenterScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          S.of(context).HC,
+          'HC'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -39,7 +38,7 @@ class HelpCenterScreen extends StatelessWidget {
             const PopularQuestionsSection(),
             const SizedBox(height: 24),
             const HelpCategoriesSection(),
-            const SizedBox(height:  24),
+            const SizedBox(height: 24),
             const ContactSupportSection(),
           ],
         ),
@@ -65,7 +64,7 @@ class HelpCenterScreen extends StatelessWidget {
       ),
       child: TextField(
         decoration: InputDecoration(
-          hintText: S.of(context).Sfh,
+          hintText: 'Sfh'.tr,
           hintStyle: AppTextstyles.withColor(
             AppTextstyles.bodyMedium,
             isDark ? Colors.grey[400]! : Colors.grey[600]!,

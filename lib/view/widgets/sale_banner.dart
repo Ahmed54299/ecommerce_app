@@ -1,6 +1,7 @@
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class SaleBanner extends StatelessWidget {
   const SaleBanner({super.key});
@@ -21,21 +22,21 @@ class SaleBanner extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  S.of(context).getyour,
+                  'getyour'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.h3,
                     Colors.white,
                   ),
                 ),
                 Text(
-                  S.of(context).specialsale,
+                  'specialsale'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.withWeight(AppTextstyles.h2, FontWeight.bold),
                     Colors.white,
                   ),
                 ),
                 Text(
-                  S.of(context).upto,
+                  'upto'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.h3,
                     Colors.white,
@@ -51,10 +52,7 @@ class SaleBanner extends StatelessWidget {
               foregroundColor: Colors.black,
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             ),
-            child: Text(
-              S.of(context).shopnow,
-              style: AppTextstyles.buttonMedium,
-            ),
+            child: Text('shopnow'.tr, style: AppTextstyles.buttonMedium),
           ),
         ],
       ),

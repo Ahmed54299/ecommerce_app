@@ -1,7 +1,8 @@
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class WishlistScreen extends StatelessWidget {
   const WishlistScreen({super.key});
@@ -13,7 +14,7 @@ class WishlistScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
         title: Text(
-          S.of(context).WS,
+          'WS'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -68,7 +69,7 @@ class WishlistScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '$favoriteProducts ${S.of(context).items}',
+                '$favoriteProducts ${'items'.tr}',
                 style: AppTextstyles.withColor(
                   AppTextstyles.h2,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -76,7 +77,7 @@ class WishlistScreen extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                S.of(context).iyw,
+                'iyw'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyMedium,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -91,7 +92,7 @@ class WishlistScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
             ),
             child: Text(
-              S.of(context).AAtC,
+              'AAtC'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.buttonMedium,
                 Colors.white,

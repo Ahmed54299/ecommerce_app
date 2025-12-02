@@ -1,3 +1,5 @@
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
+
 class Product {
   final String name;
   final String category;
@@ -19,38 +21,38 @@ class Product {
 }
 
 final List<Product> products = [
-  const Product(
-    name: 'Shoes',
-    category: 'Footwear',
+  Product(
+    name: 'Shoes'.tr,
+    category: 'Footwear'.tr,
     price: 69.00,
     oldPrice: 189.00,
     imageUrl: 'assets/images/shoe.jpg',
-    description: 'This is a description of the product 1',
+    description: 'This is a description of the product 1'.tr,
   ),
-  const Product(
-    name: 'Laptop',
-    category: 'Electronics',
+  Product(
+    name: 'Laptop'.tr,
+    category: 'Electronics'.tr,
     price: 69.00,
     oldPrice: 189.00,
     imageUrl: 'assets/images/laptop.jpg',
-    description: 'This is a description of the product 2',
+    description: 'This is a description of the product 2'.tr,
     isFavorite: true,
   ),
-  const Product(
-    name: 'Jordan Shoes',
-    category: 'Footwear',
+  Product(
+    name: 'Jordan Shoes'.tr,
+    category: 'Footwear'.tr,
     price: 69.00,
     oldPrice: 189.00,
     imageUrl: 'assets/images/shoe2.jpg',
-    description: 'This is a description of the product 3',
+    description: 'This is a description of the product 3'.tr,
     isFavorite: true,
   ),
-  const Product(
-    name: 'Puma',
-    category: 'Footwear',
+  Product(
+    name: 'Puma'.tr,
+    category: 'Footwear'.tr,
     price: 69.00,
     oldPrice: 189.00,
     imageUrl: 'assets/images/shoe.jpg',
-    description: 'This is a description of the product 4',
+    description: 'This is a description of the product 4'.tr,
   ),
 ];

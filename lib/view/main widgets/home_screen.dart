@@ -30,15 +30,15 @@ class HomeScreen extends StatelessWidget {
                     backgroundImage: AssetImage('assets/images/avatar.jpg'),
                   ),
                   const SizedBox(width: 12),
-                  const Column(
+                  Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hello Alex', //S.of(context).hello
+                        'hello'.tr,
                         style: TextStyle(color: Colors.grey, fontSize: 14),
                       ),
                       Text(
-                        'Good Morning', // S.of(context).goodmorning
+                        'goodmorning'.tr,
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -57,13 +57,7 @@ class HomeScreen extends StatelessWidget {
                       } else {
                         localeCtrl.changeLang('ar');
                       }
-                      // if (Locale('en') == true) {
-                      //   context.setLocale(Locale('ar'));
-                      // } else {
-                      //   context.setLocale(Locale('en'));
-                      // }
-                      // Restart.restartApp();
-                    }, // => Locale('en'),
+                    },
                     icon: const Icon(Icons.language_outlined),
                   ),
                   //notification icon
@@ -106,14 +100,14 @@ class HomeScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Popular Product', //S.of(context).PP
+                  Text(
+                    'PP'.tr,
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   GestureDetector(
                     onTap: () => Get.to(() => const AllProductsScreen()),
                     child: Text(
-                      'See All', //S.of(context).seeall
+                      'seeall'.tr,
                       style: TextStyle(color: Theme.of(context).primaryColor),
                     ),
                   ),

@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -103,7 +102,7 @@ class QuestionCard extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  S.of(context).gotit,
+                  'gotit'.tr,
                   style: AppTextstyles.withColor(
                     AppTextstyles.buttonMedium,
                     Colors.white,

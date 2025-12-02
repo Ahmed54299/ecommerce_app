@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,7 +23,7 @@ class FilterBottomSheet {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    S.of(context).FP,
+                    'FP'.tr,
                     style: AppTextstyles.withColor(
                       AppTextstyles.h3,
                       Theme.of(context).textTheme.bodyLarge!.color!,
@@ -40,7 +40,7 @@ class FilterBottomSheet {
               ),
               const SizedBox(height: 24),
               Text(
-                S.of(context).PR,
+                'PR'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -52,7 +52,7 @@ class FilterBottomSheet {
                   Expanded(
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: S.of(context).min,
+                        hintText: 'min'.tr,
                         prefixText: '\$',
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -71,7 +71,7 @@ class FilterBottomSheet {
                   Expanded(
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: S.of(context).max,
+                        hintText: 'max'.tr,
                         prefixText: '\$',
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -89,7 +89,7 @@ class FilterBottomSheet {
               ),
               const SizedBox(height: 24),
               Text(
-                S.of(context).categories,
+                'categories'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -101,17 +101,17 @@ class FilterBottomSheet {
                 runSpacing: 8,
                 children:
                     [
-                          S.of(context).all,
-                          S.of(context).shoes,
-                          S.of(context).clothing,
-                          S.of(context).accessories,
-                          S.of(context).bags,
-                          S.of(context).electronics,
+                          'all'.tr,
+                          'shoes'.tr,
+                          'clothing'.tr,
+                          'accessories'.tr,
+                          'bags'.tr,
+                          'electronics'.tr,
                         ]
                         .map(
                           (category) => FilterChip(
                             label: Text(category),
-                            selected: category == S.of(context).all,
+                            selected: category == 'all'.tr,
                             onSelected: (selected) {},
                             backgroundColor: Theme.of(context).cardColor,
                             selectedColor: Theme.of(
@@ -119,7 +119,7 @@ class FilterBottomSheet {
                             ).primaryColor.withOpacity(0.2),
                             labelStyle: AppTextstyles.withColor(
                               AppTextstyles.bodyMedium,
-                              category == S.of(context).all
+                              category == 'all'.tr
                                   ? Theme.of(context).primaryColor
                                   : Theme.of(
                                       context,
@@ -143,7 +143,7 @@ class FilterBottomSheet {
                     ),
                   ),
                   child: Text(
-                    S.of(context).AF,
+                    'AF'.tr,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,

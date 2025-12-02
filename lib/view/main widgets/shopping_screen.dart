@@ -1,9 +1,10 @@
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/widgets/category_chips.dart';
 import 'package:ecommerce_app/view/widgets/filter_bottom_sheet.dart';
 import 'package:ecommerce_app/view/widgets/product_grid.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class ShoppingScreen extends StatelessWidget {
   const ShoppingScreen({super.key});
@@ -15,7 +16,7 @@ class ShoppingScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          S.of(context).shopping,
+          'shopping'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,

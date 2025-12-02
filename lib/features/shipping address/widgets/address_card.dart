@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/features/shipping%20address/models/address.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class AddressCard extends StatelessWidget {
   final Address address;
@@ -79,7 +80,7 @@ class AddressCard extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                'Default',
+                                'Default'.tr,
                                 style: AppTextstyles.withColor(
                                   AppTextstyles.bodySmall,
                                   Theme.of(context).primaryColor,
@@ -119,9 +120,9 @@ class AddressCard extends StatelessWidget {
                           color: Theme.of(context).primaryColor,
                           size: 20,
                         ),
-                        const SizedBox(width: 8),
+                        SizedBox(width: 8),
                         Text(
-                          'Edit',
+                          'Edit'.tr,
                           style: AppTextstyles.withColor(
                             AppTextstyles.buttonMedium,
                             Theme.of(context).primaryColor,
@@ -146,9 +147,9 @@ class AddressCard extends StatelessWidget {
                           color: Colors.red,
                           size: 20,
                         ),
-                        const SizedBox(width: 8),
+                        SizedBox(width: 8),
                         Text(
-                          'Delete',
+                          'Delete'.tr,
                           style: AppTextstyles.withColor(
                             AppTextstyles.buttonMedium,
                             Colors.red,

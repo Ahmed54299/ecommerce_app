@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/features/help%20center/views/widgets/category_card.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class HelpCategoriesSection extends StatelessWidget {
   const HelpCategoriesSection({super.key});
@@ -9,16 +9,10 @@ class HelpCategoriesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final categories = [
-      {'icon': Icons.shopping_bag_outlined, 'title': S.of(context).orders},
-      {'icon': Icons.payment_outlined, 'title': S.of(context).payments},
-      {
-        'icon': Icons.local_shipping_outlined,
-        'title': S.of(context).shipping,
-      },
-      {
-        'icon': Icons.assignment_return_outlined,
-        'title': S.of(context).returns,
-      },
+      {'icon': Icons.shopping_bag_outlined, 'title': 'orders'.tr},
+      {'icon': Icons.payment_outlined, 'title': 'payments'.tr},
+      {'icon': Icons.local_shipping_outlined, 'title': 'shipping'.tr},
+      {'icon': Icons.assignment_return_outlined, 'title': 'returns'.tr},
     ];
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -26,7 +20,7 @@ class HelpCategoriesSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            S.of(context).HCs,
+            'HCs'.tr,
             style: AppTextstyles.withColor(
               AppTextstyles.h3,
               Theme.of(context).textTheme.bodyLarge!.color!,

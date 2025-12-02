@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/features/my%20orders/model/order.dart';
 import 'package:ecommerce_app/features/my%20orders/repository/order_repository.dart';
 import 'package:ecommerce_app/features/my%20orders/view/widgets/order_card.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +24,7 @@ class MyOrdersScreen extends StatelessWidget {
             ),
           ),
           title: Text(
-            S.of(context).MO,
+            'MO'.tr,
             style: AppTextstyles.withColor(
               AppTextstyles.h3,
               isDark ? Colors.white : Colors.black,
@@ -35,10 +34,10 @@ class MyOrdersScreen extends StatelessWidget {
             labelColor: Theme.of(context).primaryColor,
             unselectedLabelColor: isDark ? Colors.grey[400] : Colors.grey[600],
             indicatorColor: Theme.of(context).primaryColor,
-            tabs: const [
-              Tab(text: 'Active'),
-              Tab(text: 'Completed'),
-              Tab(text: 'Cancelled'),
+            tabs: [
+              Tab(text: 'Active'.tr),
+              Tab(text: 'Completed'.tr),
+              Tab(text: 'Cancelled'.tr),
             ],
           ),
         ),

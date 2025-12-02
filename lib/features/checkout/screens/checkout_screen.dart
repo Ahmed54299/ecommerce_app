@@ -3,7 +3,6 @@ import 'package:ecommerce_app/features/checkout/widgets/checkout_bottom_bar.dart
 import 'package:ecommerce_app/features/checkout/widgets/order_summary_card.dart';
 import 'package:ecommerce_app/features/checkout/widgets/payment_method_card.dart';
 import 'package:ecommerce_app/features/order%20confirmation/screens/order_confirmation_screen.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,7 +23,7 @@ class CheckoutScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          S.of(context).checkout,
+          'checkout'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -36,15 +35,15 @@ class CheckoutScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildSectionTitle(context, S.of(context).SA),
+            _buildSectionTitle(context, 'SA'.tr),
             const SizedBox(height: 16),
             const AddressCard(),
             const SizedBox(height: 24),
-            _buildSectionTitle(context, S.of(context).PM),
+            _buildSectionTitle(context, 'PM'.tr),
             const SizedBox(height: 16),
             const PaymentMethodCard(),
             const SizedBox(height: 24),
-            _buildSectionTitle(context, S.of(context).OS),
+            _buildSectionTitle(context, 'OS'.tr),
             const SizedBox(height: 16),
             const OrderSummaryCard(),
           ],

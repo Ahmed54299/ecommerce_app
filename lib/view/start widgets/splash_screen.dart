@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/view/main%20widgets/main_screen.dart';
 import 'package:ecommerce_app/view/start%20widgets/onboarding_screen.dart';
 import 'package:ecommerce_app/view/start%20widgets/signin_screen.dart';
@@ -100,7 +100,7 @@ class SplashScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          S.of(context).fashion,
+                          'fashion'.tr,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 32,
@@ -109,7 +109,7 @@ class SplashScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          S.of(context).store,
+                          'store'.tr,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 32,
@@ -135,7 +135,7 @@ class SplashScreen extends StatelessWidget {
                   return Opacity(opacity: value, child: child);
                 },
                 child: Text(
-                  S.of(context).SMs,
+                  'SMs'.tr,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.9),

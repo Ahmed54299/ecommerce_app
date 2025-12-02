@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/features/models/notification_type.dart';
 import 'package:ecommerce_app/features/repositories/notification_repository.dart';
 import 'package:ecommerce_app/features/utils/notification_utils.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,7 +23,7 @@ class NotificationsScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-         S.of(context).notifications,
+          'notifications'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -34,7 +33,7 @@ class NotificationsScreen extends StatelessWidget {
           TextButton(
             onPressed: () {},
             child: Text(
-              S.of(context).allmark,
+              'allmark'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.bodyMedium,
                 Theme.of(context).primaryColor,

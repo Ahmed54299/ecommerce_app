@@ -13,22 +13,22 @@ class CustomBottomNavbar extends StatelessWidget {
       () => BottomNavigationBar(
         currentIndex: navigationController.currentIndex.value,
         onTap: (index) => navigationController.changeIndex(index),
-        items: const [
+        items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),
-            label: 'Home',//S.of(context).home
+            label: 'home'.tr,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_bag_outlined),
-            label: 'Shopping',//S.of(context).shopping
+            label: 'shopping'.tr,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite_outline),
-            label: 'Wishlist',//S.of(context).wishlist
+            label: 'wishlist'.tr,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
-            label: 'Account',//S.of(context).account
+            label: 'account'.tr,
           ),
         ],
       ),

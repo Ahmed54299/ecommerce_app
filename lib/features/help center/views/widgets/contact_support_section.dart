@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class ContactSupportSection extends StatelessWidget {
   const ContactSupportSection({super.key});
@@ -25,7 +25,7 @@ class ContactSupportSection extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            S.of(context).Snhw,
+            'Snhw'.tr,
             style: AppTextstyles.withColor(
               AppTextstyles.h3,
               Theme.of(context).textTheme.bodyLarge!.color!,
@@ -33,7 +33,7 @@ class ContactSupportSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            S.of(context).Cost,
+            'Cost'.tr,
             style: AppTextstyles.withColor(
               AppTextstyles.bodyMedium,
               isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -51,7 +51,7 @@ class ContactSupportSection extends StatelessWidget {
               ),
             ),
             child: Text(
-              S.of(context).CS,
+              'CS'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.buttonMedium,
                 Colors.white,

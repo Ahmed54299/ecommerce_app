@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/start%20widgets/forgot_password_screen.dart';
 import 'package:ecommerce_app/view/main%20widgets/main_screen.dart';
@@ -27,7 +27,7 @@ class SigninScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 40),
               Text(
-                S.of(context).welcomeback,
+                'welcomeback'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -35,7 +35,7 @@ class SigninScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                S.of(context).Sitcs,
+                'Sitcs'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -44,16 +44,16 @@ class SigninScreen extends StatelessWidget {
               const SizedBox(height: 40),
               //emial textfield
               CustomTextfield(
-                label: S.of(context).email,
+                label: 'email'.tr,
                 prefixIcon: Icons.email_outlined,
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return S.of(context).Peye;
+                    return 'Peye'.tr;
                   }
                   if (!GetUtils.isEmail(value)) {
-                    return S.of(context).Peave;
+                    return 'Peave'.tr;
                   }
                   return null;
                 },
@@ -61,14 +61,14 @@ class SigninScreen extends StatelessWidget {
               const SizedBox(height: 16),
               //password textfield
               CustomTextfield(
-                label: S.of(context).password,
+                label: 'password'.tr,
                 prefixIcon: Icons.lock_outline,
                 keyboardType: TextInputType.visiblePassword,
                 isPassword: true,
                 controller: _passwordController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return S.of(context).Peyp;
+                    return 'Peyp'.tr;
                   }
                   return null;
                 },
@@ -81,7 +81,7 @@ class SigninScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () => Get.to(() => ForgotPasswordScreen()),
                   child: Text(
-                    S.of(context).FPw,
+                    'FPw'.tr,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Theme.of(context).primaryColor,
@@ -103,7 +103,7 @@ class SigninScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    S.of(context).signin,
+                    'signin'.tr,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,
@@ -117,7 +117,7 @@ class SigninScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    S.of(context).Dhaaw,
+                    'Dhaaw'.tr,
                     style: AppTextstyles.withColor(
                       AppTextstyles.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -126,7 +126,7 @@ class SigninScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () => Get.to(() => SignUpScreen()),
                     child: Text(
-                      S.of(context).signup,
+                      'signup'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.buttonMedium,
                         Theme.of(context).primaryColor,

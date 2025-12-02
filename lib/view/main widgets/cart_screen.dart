@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/features/checkout/screens/checkout_screen.dart';
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +21,7 @@ class CartScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          S.of(context).MC,
+          'MC'.tr,
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -187,7 +187,7 @@ class CartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             Text(
-              S.of(context).removeI,
+              'removeI'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.h3,
                 Theme.of(context).textTheme.bodyLarge!.color!,
@@ -195,7 +195,7 @@ class CartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              S.of(context).Ayswtrtifyc,
+              'Ayswtrtifyc'.tr,
               textAlign: TextAlign.center,
               style: AppTextstyles.withColor(
                 AppTextstyles.bodyMedium,
@@ -218,7 +218,7 @@ class CartScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).cancel,
+                      'cancel'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodyMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -241,7 +241,7 @@ class CartScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      S.of(context).remove,
+                      'remove'.tr,
                       style: AppTextstyles.withColor(
                         AppTextstyles.bodyMedium,
                         Colors.white,
@@ -279,7 +279,7 @@ class CartScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                S.of(context).totalI,
+                'totalI'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyMedium,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -307,7 +307,7 @@ class CartScreen extends StatelessWidget {
                 ),
               ),
               child: Text(
-                S.of(context).proceed,
+                'proceed'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.buttonMedium,
                   Colors.white,

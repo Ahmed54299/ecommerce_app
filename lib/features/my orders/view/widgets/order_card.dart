@@ -53,7 +53,7 @@ class OrderCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Order # ${order.OrderNumber}',
+                        '${'Order'.tr} # ${order.OrderNumber}',
                         style: AppTextstyles.withColor(
                           AppTextstyles.h3,
                           Theme.of(context).textTheme.bodyLarge!.color!,
@@ -61,7 +61,8 @@ class OrderCard extends StatelessWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        '${order.itemCount} items . \$${order.totalAmount.toStringAsFixed(2)}',
+                        '${order.itemCount} ${'items'.tr} . \$${order.totalAmount.toStringAsFixed(2)}'
+                            .tr,
                         style: AppTextstyles.withColor(
                           AppTextstyles.bodyMedium,
                           isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -82,7 +83,7 @@ class OrderCard extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 12),
               child: Text(
-                'View Details',
+                'View Details'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.buttonMedium,
                   Theme.of(context).primaryColor,
@@ -116,7 +117,7 @@ class OrderCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text(
-        type.capitalize!,
+        type.tr.capitalize!,
         style: AppTextstyles.withColor(
           AppTextstyles.bodySmall,
           getStatusColor(),

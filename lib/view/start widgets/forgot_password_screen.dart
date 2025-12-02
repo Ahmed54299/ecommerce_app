@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/generated/l10n.dart';
+// import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +32,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               const SizedBox(height: 20),
               //reset password text
               Text(
-                S.of(context).RP,
+                'RP'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -41,7 +41,7 @@ class ForgotPasswordScreen extends StatelessWidget {
 
               const SizedBox(height: 8),
               Text(
-                S.of(context).Eyetryp,
+                'Eyetryp'.tr,
                 style: AppTextstyles.withColor(
                   AppTextstyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
@@ -50,16 +50,16 @@ class ForgotPasswordScreen extends StatelessWidget {
               const SizedBox(height: 40),
               //email textfield
               CustomTextfield(
-                label: S.of(context).email,
+                label: 'email'.tr,
                 prefixIcon: Icons.email_outlined,
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return S.of(context).Peye;
+                    return 'Peye'.tr;
                   }
                   if (!GetUtils.isEmail(value)) {
-                    return S.of(context).Peave;
+                    return 'Peave'.tr;
                   }
                   return null;
                 },
@@ -80,7 +80,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    S.of(context).SRL,
+                    'SRL'.tr,
                     style: AppTextstyles.withColor(
                       AppTextstyles.buttonMedium,
                       Colors.white,
@@ -99,16 +99,13 @@ class ForgotPasswordScreen extends StatelessWidget {
   void showSuccessDialog(BuildContext context) {
     Get.dialog(
       AlertDialog(
-        title: Text(S.of(context).CYE, style: AppTextstyles.h3),
-        content: Text(
-          S.of(context).Whspritye,
-          style: AppTextstyles.bodyMedium,
-        ),
+        title: Text('CYE'.tr, style: AppTextstyles.h3),
+        content: Text('Whspritye'.tr, style: AppTextstyles.bodyMedium),
         actions: [
           TextButton(
             onPressed: () => Get.back(),
             child: Text(
-              S.of(context).ok,
+              'ok'.tr,
               style: AppTextstyles.withColor(
                 AppTextstyles.buttonMedium,
                 Theme.of(context).primaryColor,
