@@ -120,26 +120,10 @@ class QuestionCard extends StatelessWidget {
 
   String _getAnswer(String question) {
     final answers = {
-      'How to track my order?':
-          'To track your order:\n\n'
-          '1. Go to "My Orders" in your account\n'
-          '2. Select the order you want to track\n'
-          '3. Click on "Track Order"\n'
-          '4. You\'ll see real time updates about your package location\n\n'
-          'You can also click on the tracking number in your order confirmation email to track your package directly.'
-          'How to return an item?'
-          'To return an item:\n\n'
-          '1. Go to "My Orders" in your account\n'
-          '2. Select the order with the item you want to return it\n'
-          '3. Click on "Return Item"\n'
-          '4. Select the reason for return\n'
-          '5. Print the return label\n'
-          '6. Pack the item securely\n'
-          '7. Drop off the package at the nearest shipping location\n\n'
-          'Returns must be initiated within 30 days of delivery. Once we receive the item, your refund will be processed within 5-7 business days.',
+      'How to track my orders?'.tr: 'track_order'.tr,
+      'How to return an item?'.tr: 'return_item'.tr,
     };
-
     return answers[question] ??
-        'Information not available. Please contact support for assistance';
+        'Information not available Please contact support for assistance'.tr;
   }
 }

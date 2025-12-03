@@ -376,6 +376,7 @@ class ShippingAddressScreen extends StatelessWidget {
           ],
         ),
       ),
+      isScrollControlled: true,
     );
   }
 }

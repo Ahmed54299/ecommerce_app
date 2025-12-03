@@ -117,25 +117,29 @@ class MyLocale implements Translations {
       "Sfh": "البحث عن المساعدة",
       "PQ": "الأسئلة الشائعة",
       "Httmo": "كيفية تتبع طلبياتي؟",
-      "Ttyo": "لتتبع طلبك:\n\n",
-      "GtMOiya": "1. Go to \"My Orders\" in your account\n",
-      "Stoywtt": "2. حدد الطلب الذي تريد تتبعه\n",
-      "CoTO": "3. Click on \"Track Order\"\n",
-      "Ysrtuaypl":
-          "4. ستشاهد تحديثات في الوقت الفعلي حول موقع الحزمة الخاصة بك\n\n",
-      "Ycacottniyocettybd":
-          "يمكنك أيضًا النقر فوق رقم التتبع الموجود في بريدك الإلكتروني لتأكيد الطلب لتتبع الحزمة الخاصة بك مباشرةً.",
+      "How to track my orders?": "كيفية تتبع طلبياتي؟",
+      "track_order": '''لتتبع طلبك:
+
+1. اذهب إلى "طلباتي"
+2. اختر الطلب الذي تريد تتبعه
+3. اضغط "تتبع الطلب"
+4. سترى تحديثات مباشرة لموقع الشحنة
+
+يمكنك أيضًا النقر فوق رقم التتبع الموجود في رسالة تأكيد الطلب الخاصة بك لتتبع الحزمة الخاصة بك مباشرةً.''',
       "Htraiw": "كيفية إرجاع العنصر؟",
-      "Trai": "لإرجاع العنصر:\n\n",
-      "Stowtiywtri": "2. حدد الطلب الذي يحتوي على العنصر الذي تريد إرجاعه\n",
-      "CoRI": "3. Click on \"Return Item\"\n",
-      "Strfr": "4. حدد سبب الإرجاع\n",
-      "Ptrl": "5. اطبع ملصق الإرجاع\n",
-      "Ptis": "6. قم بتعبئة العنصر بشكل آمن\n",
-      "Dotpatnsl": "7. قم بتسليم الطرد في أقرب موقع شحن\n\n",
-      "Rmbiw30dodOwrtiyrwbpw57bd":
-          "يجب أن تبدأ عمليات الإرجاع خلال 30 يومًا من تاريخ التسليم. بمجرد استلامنا للمنتج، سيتم معالجة استرداد أموالك خلال 5-7 أيام عمل.",
-      "InaPcsfa":
+      "How to return an item?": "كيفية إرجاع العنصر؟",
+      "return_item": '''لإرجاع منتج:
+
+1. اذهب إلى "طلباتي"
+2. اختر الطلب المطلوب
+3. اضغط "إرجاع المنتج"
+4. اختر سبب الإرجاع
+5. اطبع ملصق الإرجاع
+6. غلّف المنتج جيداً
+7. سلّمه لأقرب نقطة شحن
+
+يجب أن تبدأ عمليات الإرجاع خلال 30 يومًا من تاريخ التسليم. بمجرد استلامنا للمنتج، سيتم معالجة استرداد أموالك خلال 5-7 أيام عمل.''',
+      "Information not available. Please contact support for assistance":
           "المعلومات غير متوفرة. يُرجى التواصل مع الدعم الفني للحصول على المساعدة.",
       "gotit": "حصلت عليه",
       "orders": "الطلبات",
@@ -252,11 +256,11 @@ class MyLocale implements Translations {
       "Cookie Policy": "سياسة ملفات تعريف الارتباط",
       "Your order #orderNumber has successfully placed.":
           "لقد تم تقديم طلبك #orderNumber بنجاح.",
-      "Active": "نشط",
-      "Completed": "مكتمل",
-      "Cancelled": "تم الإلغاء",
+      "active": "نشط",
+      "completed": "مكتمل",
+      "canceiled": "تم الإلغاء",
       "View Details": "عرض التفاصيل",
-      "Information not available. Please contact support for assistance":
+      "Information not available Please contact support for assistance":
           "المعلومات غير متوفرة. يُرجى التواصل مع الدعم الفني للحصول على المساعدة.",
       "Phone Number": "رقم الهاتف",
       "Shop now at": "تسوق الآن في",
@@ -376,28 +380,32 @@ class MyLocale implements Translations {
       "Pdnm": "Password do not match",
       "Sfh": "Search for help",
       "PQ": "Popular Questions",
-      "Httmo": "How to track my orders?",
-      "Ttyo": "To track your order:\n\n",
-      "GtMOiya": "1. Go to \"My Orders\" in your account\n",
-      "Stoywtt": "2. Select the order you want to track\n",
-      "CoTO": "3. Click on \"Track Order\"\n",
-      "Ysrtuaypl":
-          "4. You'll see real time updates about your package location\n\n",
-      "Ycacottniyocettybd":
-          "You can also click on the tracking number in your order confirmation email to track your package directly.",
-      "Htraiw": "How to return an item?",
-      "Trai": "To return an item:\n\n",
-      "Stowtiywtri":
-          "2. Select the order with the item you want to return it\n",
-      "CoRI": "3. Click on \"Return Item\"\n",
-      "Strfr": "4. Select the reason for return\n",
-      "Ptrl": "5. Print the return label\n",
-      "Ptis": "6. Pack the item securely\n",
-      "Dotpatnsl":
-          "7. Drop off the package at the nearest shipping location\n\n",
-      "Rmbiw30dodOwrtiyrwbpw57bd":
-          "Returns must be initiated within 30 days of delivery. Once we receive the item, your refund will be processed within 5-7 business days.",
-      "InaPcsfa":
+      "How to track my orders?": "How to track my orders?",
+      "track_order": '''
+To track your order:
+
+1. Go to "My Orders"
+2. Select the order you want to track
+3. Click on "Track Order"
+4. You'll see real time updates about your package location
+
+You can also click on the tracking number found in your order confirmation message to track your package directly.
+''',
+      "How to return an item?": "How to return an item?",
+      "return_item": '''
+To return an item:
+
+1. Go to "My Orders"
+2. Select the order
+3. Click "Return Item"
+4. Select reason
+5. Print label
+6. Pack the item
+7. Drop it at nearest shipping point
+
+Returns must be initiated within 30 days of delivery. Once we receive the product, your refund will be processed within 5-7 business days.
+''',
+      "Information not available. Please contact support for assistance":
           "Information not available. Please contact support for assistance",
       "gotit": "Got It",
       "orders": "Orders",
@@ -518,11 +526,11 @@ class MyLocale implements Translations {
       "Cookie Policy": "Cookie Policy",
       "Your order #orderNumber has successfully placed.":
           "Your order #orderNumber has successfully placed.",
-      "Active": "Active",
-      "Completed": "Completed",
-      "Cancelled": "Cancelled",
+      "active": "Active",
+      "completed": "Completed",
+      "canceiled": "Canceiled",
       "View Details": "View Details",
-      "Information not available. Please contact support for assistance":
+      "Information not available Please contact support for assistance":
           "Information not available. Please contact support for assistance",
       "Phone Number": "Phone Number",
       "Shop now at": "Shop now at",

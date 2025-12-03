@@ -35,9 +35,9 @@ class MyOrdersScreen extends StatelessWidget {
             unselectedLabelColor: isDark ? Colors.grey[400] : Colors.grey[600],
             indicatorColor: Theme.of(context).primaryColor,
             tabs: [
-              Tab(text: 'Active'.tr),
-              Tab(text: 'Completed'.tr),
-              Tab(text: 'Cancelled'.tr),
+              Tab(text: 'active'.tr),
+              Tab(text: 'completed'.tr),
+              Tab(text: 'canceiled'.tr),
             ],
           ),
         ),

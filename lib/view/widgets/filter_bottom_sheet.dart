@@ -155,6 +155,7 @@ class FilterBottomSheet {
           ),
         ),
       ),
+      isScrollControlled: true,
     );
   }
 }
