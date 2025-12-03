@@ -1,8 +1,7 @@
-import 'package:ecommerce_app/controllers/locale_controller.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/privacy%20policy/views/screens/privacy_policy_screen.dart';
 import 'package:ecommerce_app/features/terms%20of%20service/view/screens/terms_of_service_screen.dart';
-// import 'package:ecommerce_app/generated/l10n.dart';
+import 'package:ecommerce_app/locale/locale_controller.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -13,6 +12,8 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    MyLocaleController controllerLang = Get.find();
+
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
@@ -49,13 +50,9 @@ class SettingsScreen extends StatelessWidget {
                 'changel'.tr,
                 Icons.language_outlined,
                 onTap: () {
-                  final localeCtrl = Get.find<LocaleController>();
-
-                  if (localeCtrl.appLocale.value.languageCode == 'ar') {
-                    localeCtrl.changeLang('en');
-                  } else {
-                    localeCtrl.changeLang('ar');
-                  }
+                  controllerLang.changeLang(
+                    Get.locale!.languageCode == 'ar' ? 'en' : 'ar',
+                  );
                 },
               ),
             ]),

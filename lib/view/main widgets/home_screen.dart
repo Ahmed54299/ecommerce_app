@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/controllers/locale_controller.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/notifications/view/notifications_screen.dart';
+import 'package:ecommerce_app/locale/locale_controller.dart';
 import 'package:ecommerce_app/view/all_products_screen.dart';
 import 'package:ecommerce_app/view/main%20widgets/cart_screen.dart';
 import 'package:ecommerce_app/view/widgets/category_chips.dart';
@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    MyLocaleController controllerLang = Get.find();
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SafeArea(
@@ -50,13 +51,9 @@ class HomeScreen extends StatelessWidget {
                   //translate icon
                   IconButton(
                     onPressed: () {
-                      final localeCtrl = Get.find<LocaleController>();
-
-                      if (localeCtrl.appLocale.value.languageCode == 'ar') {
-                        localeCtrl.changeLang('en');
-                      } else {
-                        localeCtrl.changeLang('ar');
-                      }
+                      controllerLang.changeLang(
+                        Get.locale!.languageCode == 'ar' ? 'en' : 'ar',
+                      );
                     },
                     icon: const Icon(Icons.language_outlined),
                   ),

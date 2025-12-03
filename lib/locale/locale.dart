@@ -323,12 +323,13 @@ class MyLocale implements Translations {
       "min": "Min",
       "max": "Max",
       "categories": "Categories",
+      "Shoes": "Shoes",
       "shoes": "Shoes",
       "clothing": "Clothing",
       "accessories": "Accessories",
       "bags": "Bags",
       "electronics": "Electronics",
-      "AF": "Apply Filtersaa",
+      "AF": "Apply Filters",
       "WS": "Wishlist Screen",
       "iyw": "in your wishlist",
       "AAtC": "Add All to Cart",
@@ -418,7 +419,7 @@ Returns must be initiated within 30 days of delivery. Once we receive the produc
       "CS": "Contact Support",
       "IWC": "Information We Collect",
       "Wcitypdtuinea":
-          "We collect information that you provide directly to us, including name, email address, and shippinginformation.",
+          "We collect information that you provide directly to us, including name, email address and shipping information.",
       "LuM2024": "Last updated: March 2024",
       "MSA4B": "123 Main Street, Apt 4B",
       "NYNY101": "New York, NY 10001",
@@ -468,7 +469,6 @@ Returns must be initiated within 30 days of delivery. Once we receive the produc
       "remove": "Remove",
       "totalI": "Total (4 items)",
       "proceed": "Proceed to Checkout",
-      "Shoes": "Shoes",
       "Footwear": "Footwear",
       "This is a description of the product 1":
           "This is a description of the product 1",
@@ -486,7 +486,7 @@ Returns must be initiated within 30 days of delivery. Once we receive the produc
           "By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.",
       "Welcome to Fashion Store": "Welcome to Fashion Store",
       "Account Registration": "Account Registration",
-      "User REsponsibilities": "User REsponsibilities",
+      "User REsponsibilities": "User Responsibilities",
       "Privacy Policy": "Privacy Policy",
       "Intellectual Property": "Intellectual Property",
       "Termination": "Termination",
@@ -516,7 +516,7 @@ Returns must be initiated within 30 days of delivery. Once we receive the produc
           "Payment for order #43232 was successful.",
       "Information We Collect": "Information We Collect",
       "We collect information that you provide directly to us, including name, email address, and shippinginformation.":
-          "We collect information that you provide directly to us, including name, email address, and shippinginformation.",
+          "We collect information that you provide directly to us, including name, email address, and shipping information.",
       "How We Use Your Information": "How We Use Your Information",
       "We use the information we collect to provide, maintain and improve our services, process your transactions, and send you updates.":
           "We use the information we collect to provide, maintain and improve our services, process your transactions, and send you updates.",
@@ -537,6 +537,8 @@ Returns must be initiated within 30 days of delivery. Once we receive the produc
       "Your order": "Your order",
       "has successfully placed.": "has successfully placed.",
       "order": "order",
+      "Httmo": "How to track my orders?",
+      "Htraiw": "How to return an item?",
     },
   };
 }
