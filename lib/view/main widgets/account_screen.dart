@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
-import 'package:ecommerce_app/features/edit%20profile/views/screens/edit_profile_screen.dart';
-import 'package:ecommerce_app/features/help%20center/views/screens/help_center_screen.dart';
-import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
-import 'package:ecommerce_app/features/shipping%20address/shipping_address_screen.dart';
+import 'package:ecommerce_app/view/features/edit%20profile/views/screens/edit_profile_screen.dart';
+import 'package:ecommerce_app/view/features/help%20center/views/screens/help_center_screen.dart';
+import 'package:ecommerce_app/view/features/my%20orders/view/screens/my_orders_screen.dart';
+import 'package:ecommerce_app/view/features/shipping%20address/shipping_address_screen.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/main%20widgets/settings_screen.dart';
 import 'package:ecommerce_app/view/start%20widgets/signin_screen.dart';

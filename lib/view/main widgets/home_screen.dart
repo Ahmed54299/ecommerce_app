@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/controllers/theme_controller.dart';
-import 'package:ecommerce_app/features/notifications/view/notifications_screen.dart';
-import 'package:ecommerce_app/locale/locale_controller.dart';
-import 'package:ecommerce_app/view/all_products_screen.dart';
+import 'package:ecommerce_app/view/features/notifications/view/notifications_screen.dart';
+import 'package:ecommerce_app/controllers/locale/my_locale_controller.dart';
+import 'package:ecommerce_app/view/widgets/all_products_screen.dart';
 import 'package:ecommerce_app/view/main%20widgets/cart_screen.dart';
 import 'package:ecommerce_app/view/widgets/category_chips.dart';
 import 'package:ecommerce_app/view/widgets/custom_search_bar.dart';

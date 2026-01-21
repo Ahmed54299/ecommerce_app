@@ -42,7 +42,7 @@ class SigninScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40),
-              //emial textfield
+              //email textfield
               CustomTextfield(
                 label: 'email'.tr,
                 prefixIcon: Icons.email_outlined,

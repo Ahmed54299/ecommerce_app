@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/features/checkout/screens/checkout_screen.dart';
+import 'package:ecommerce_app/view/features/checkout/screens/checkout_screen.dart';
 // import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';

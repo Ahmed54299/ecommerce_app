@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
 import 'package:ecommerce_app/controllers/theme_controller.dart';
-import 'package:ecommerce_app/locale/locale.dart';
-import 'package:ecommerce_app/locale/locale_controller.dart';
+import 'package:ecommerce_app/controllers/locale/locale.dart';
+import 'package:ecommerce_app/controllers/locale/my_locale_controller.dart';
 import 'package:ecommerce_app/utils/app_themes.dart';
 import 'package:ecommerce_app/view/start%20widgets/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MyLocaleController controller = Get.put(MyLocaleController());
+    // MyLocaleController controller = 
+    Get.put(MyLocaleController());
     final themeController = Get.find<ThemeController>();
     return GetMaterialApp(
       locale: Get.deviceLocale,
